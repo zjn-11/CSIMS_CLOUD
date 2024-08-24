@@ -1,14 +1,14 @@
-package com.hmall.controller;
+package com.zjn.item.controller;
 
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hmall.common.domain.PageDTO;
 import com.hmall.common.domain.PageQuery;
 import com.hmall.common.utils.BeanUtils;
-import com.hmall.domain.dto.ItemDTO;
-import com.hmall.domain.dto.OrderDetailDTO;
-import com.hmall.domain.po.Item;
-import com.hmall.service.IItemService;
+import com.zjn.item.domain.dto.ItemDTO;
+import com.zjn.item.domain.dto.OrderDetailDTO;
+import com.zjn.item.domain.po.Item;
+import com.zjn.item.service.IItemService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;

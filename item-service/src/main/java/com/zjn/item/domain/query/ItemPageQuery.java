@@ -1,4 +1,4 @@
-package com.hmall.domain.query;
+package com.zjn.item.domain.query;
 
 import com.hmall.common.domain.PageQuery;
 import io.swagger.annotations.ApiModel;

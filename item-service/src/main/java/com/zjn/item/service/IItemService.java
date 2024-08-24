@@ -1,9 +1,9 @@
-package com.hmall.service;
+package com.zjn.item.service;
 
-import com.hmall.domain.dto.ItemDTO;
-import com.hmall.domain.dto.OrderDetailDTO;
-import com.hmall.domain.po.Item;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.zjn.item.domain.dto.ItemDTO;
+import com.zjn.item.domain.dto.OrderDetailDTO;
+import com.zjn.item.domain.po.Item;
 
 import java.util.Collection;
 import java.util.List;
