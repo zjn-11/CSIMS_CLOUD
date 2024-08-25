@@ -22,7 +22,7 @@ mybatis-plus:
       id-type: auto
 logging:
   level:
-    com.zjn.item: debug
+    com.zjn.cart: debug
   pattern:
     dateformat: HH:mm:ss:SSS
   file:

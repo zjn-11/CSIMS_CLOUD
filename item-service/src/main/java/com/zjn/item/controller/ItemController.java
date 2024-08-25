@@ -6,7 +6,7 @@ import com.hmall.common.domain.PageDTO;
 import com.hmall.common.domain.PageQuery;
 import com.hmall.common.utils.BeanUtils;
 import com.zjn.api.dto.ItemDTO;
-import com.zjn.item.domain.dto.OrderDetailDTO;
+import com.zjn.api.dto.OrderDetailDTO;
 import com.zjn.item.domain.po.Item;
 import com.zjn.item.service.IItemService;
 import io.swagger.annotations.Api;

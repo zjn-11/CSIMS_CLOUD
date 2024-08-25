@@ -1,7 +1,7 @@
 package com.zjn.item.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.zjn.item.domain.dto.OrderDetailDTO;
+import com.zjn.api.dto.OrderDetailDTO;
 import com.zjn.item.domain.po.Item;
 import org.apache.ibatis.annotations.Update;
 
