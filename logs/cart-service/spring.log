@@ -230,3 +230,5 @@
 15:08:30:265  WARN 69606 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m47s827ms).
 15:10:51:332  WARN 69606 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m21s67ms).
 15:12:26:640  WARN 69606 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m35s306ms).
+15:57:35:259  INFO 69606 --- [nacos-grpc-client-executor-1298] com.alibaba.nacos.common.remote.client   : [da0afeb1-c361-4443-b1b8-b38d6aad1075] Receive server push request, request = NotifySubscriberRequest, requestId = 22
+15:57:35:262  INFO 69606 --- [nacos-grpc-client-executor-1298] com.alibaba.nacos.common.remote.client   : [da0afeb1-c361-4443-b1b8-b38d6aad1075] Ack server push request, request = NotifySubscriberRequest, requestId = 22
