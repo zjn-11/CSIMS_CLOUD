@@ -3,7 +3,7 @@ package com.zjn.item.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hmall.common.exception.BizIllegalException;
 import com.hmall.common.utils.BeanUtils;
-import com.zjn.item.domain.dto.ItemDTO;
+import com.zjn.api.dto.ItemDTO;
 import com.zjn.item.domain.dto.OrderDetailDTO;
 import com.zjn.item.domain.po.Item;
 import com.zjn.item.mapper.ItemMapper;

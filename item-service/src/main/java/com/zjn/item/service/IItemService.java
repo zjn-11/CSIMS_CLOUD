@@ -1,7 +1,7 @@
 package com.zjn.item.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.zjn.item.domain.dto.ItemDTO;
+import com.zjn.api.dto.ItemDTO;
 import com.zjn.item.domain.dto.OrderDetailDTO;
 import com.zjn.item.domain.po.Item;
 
