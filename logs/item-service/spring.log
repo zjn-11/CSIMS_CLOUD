@@ -1047,3 +1047,9 @@ Caused by: java.io.FileNotFoundException: class path resource [#  com/hmall/comm
 16:18:44:378 DEBUG 73928 --- [http-nio-8083-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
 16:18:44:379 DEBUG 73928 --- [http-nio-8083-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 2120808(Long)
 16:18:44:382 DEBUG 73928 --- [http-nio-8083-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+17:07:31:233 DEBUG 73924 --- [http-nio-8081-exec-7] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+17:07:31:235 DEBUG 73924 --- [http-nio-8081-exec-7] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 2120808(Long)
+17:07:31:238 DEBUG 73924 --- [http-nio-8081-exec-7] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+17:07:33:626 DEBUG 73928 --- [http-nio-8083-exec-7] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+17:07:33:627 DEBUG 73928 --- [http-nio-8083-exec-7] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 2120808(Long)
+17:07:33:631 DEBUG 73928 --- [http-nio-8083-exec-7] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
