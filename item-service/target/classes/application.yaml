@@ -1,44 +1,57 @@
 server:
   port: 8081
-spring:
-  application:
-    name: item-service # 微服务名称
-  profiles:
-    active: dev # 运行环境
-  datasource:
-    url: jdbc:mysql://${hm.db.host}:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: ${hm.db.pw}
-  cloud:
-    nacos:
-      server-addr: 192.168.121.128:8848 # 服务器地址+nacos端口
-mybatis-plus:
-  configuration:
-    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
-  global-config:
-    db-config:
-      update-strategy: not_null
-      id-type: auto
-logging:
-  level:
-    com.zjn.item: debug
-  pattern:
-    dateformat: HH:mm:ss:SSS
-  file:
-    path: "logs/${spring.application.name}"
-knife4j:
-  enable: true
-  openapi:
-    title: CSIMS商品管理接口文档
+hm:
+  db:
+    database: hm-item
+  swagger:
+    title: "CSIMS商品管理接口文档"
+    package: com.zjn.item.controller
     description: "CSIMS商品管理接口文档"
-    email: zhanghuyi@itcast.cn
-    concat: 虎哥
-    url: https://www.itcast.cn
-    version: v1.0.0
-    group:
-      default:
-        group-name: default
-        api-rule: package
-        api-rule-resources:
-          - com.zjn.item.controller
+feign:
+  okhttp:
+    enabled: true
+
+#server:
+#  port: 8081
+#spring:
+#  application:
+#    name: item-service # 微服务名称
+#  profiles:
+#    active: dev # 运行环境
+#  datasource:
+#    url: jdbc:mysql://${hm.db.host}:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    password: ${hm.db.pw}
+#  cloud:
+#    nacos:
+#      server-addr: 192.168.121.128:8848 # 服务器地址+nacos端口
+#mybatis-plus:
+#  configuration:
+#    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+#  global-config:
+#    db-config:
+#      update-strategy: not_null
+#      id-type: auto
+#logging:
+#  level:
+#    com.zjn.item: debug
+#  pattern:
+#    dateformat: HH:mm:ss:SSS
+#  file:
+#    path: "logs/${spring.application.name}"
+#knife4j:
+#  enable: true
+#  openapi:
+#    title: CSIMS商品管理接口文档
+#    description: "CSIMS商品管理接口文档"
+#    email: zhanghuyi@itcast.cn
+#    concat: 虎哥
+#    url: https://www.itcast.cn
+#    version: v1.0.0
+#    group:
+#      default:
+#        group-name: default
+#        api-rule: package
+#        api-rule-resources:
+#          - com.zjn.item.controller

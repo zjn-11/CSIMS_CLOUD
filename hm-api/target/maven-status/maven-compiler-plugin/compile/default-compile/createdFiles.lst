@@ -1,4 +1,5 @@
 com/zjn/api/client/UserClient.class
+com/zjn/api/config/DefaultFeignConfig$1.class
 com/zjn/api/dto/ItemDTO.class
 com/zjn/api/config/DefaultFeignConfig.class
 com/zjn/api/dto/OrderDetailDTO.class
