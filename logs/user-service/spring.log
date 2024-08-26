@@ -434,3 +434,9 @@ com.hmall.common.exception.BizIllegalException: 用户密码错误
 17:07:31:023 DEBUG 73910 --- [http-nio-8084-exec-4] c.zjn.user.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
 17:07:31:024 DEBUG 73910 --- [http-nio-8084-exec-4] c.zjn.user.mapper.UserMapper.selectOne   : ==> Parameters: jack(String)
 17:07:31:028 DEBUG 73910 --- [http-nio-8084-exec-4] c.zjn.user.mapper.UserMapper.selectOne   : <==      Total: 1
+18:30:01:025 DEBUG 73910 --- [http-nio-8084-exec-5] c.zjn.user.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+18:30:01:027 DEBUG 73910 --- [http-nio-8084-exec-5] c.zjn.user.mapper.UserMapper.selectOne   : ==> Parameters: jack(String)
+18:30:01:034 DEBUG 73910 --- [http-nio-8084-exec-5] c.zjn.user.mapper.UserMapper.selectOne   : <==      Total: 1
+19:32:19:736 DEBUG 73910 --- [http-nio-8084-exec-8] c.zjn.user.mapper.UserMapper.selectOne   : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+19:32:19:738 DEBUG 73910 --- [http-nio-8084-exec-8] c.zjn.user.mapper.UserMapper.selectOne   : ==> Parameters: jack(String)
+19:32:19:741 DEBUG 73910 --- [http-nio-8084-exec-8] c.zjn.user.mapper.UserMapper.selectOne   : <==      Total: 1

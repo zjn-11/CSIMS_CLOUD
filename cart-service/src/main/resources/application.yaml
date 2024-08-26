@@ -10,3 +10,9 @@ hm:
 feign:
   okhttp:
     enabled: true
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090 # sentinel控制台地址
+      http-method-specify: true # 将请求方式作为资源名称，防止RestFul风格下的簇点重复
