@@ -1,0 +1,16 @@
+com/zjn/trade/TradeApplication.class
+com/zjn/trade/service/IOrderLogisticsService.class
+com/zjn/trade/domain/vo/OrderVO.class
+com/zjn/trade/controller/OrderController.class
+com/zjn/trade/mapper/OrderDetailMapper.class
+com/zjn/trade/service/IOrderService.class
+com/zjn/trade/service/impl/OrderDetailServiceImpl.class
+com/zjn/trade/service/impl/OrderLogisticsServiceImpl.class
+com/zjn/trade/mapper/OrderMapper.class
+com/zjn/trade/domain/dto/OrderFormDTO.class
+com/zjn/trade/domain/po/OrderLogistics.class
+com/zjn/trade/service/IOrderDetailService.class
+com/zjn/trade/domain/po/OrderDetail.class
+com/zjn/trade/mapper/OrderLogisticsMapper.class
+com/zjn/trade/service/impl/OrderServiceImpl.class
+com/zjn/trade/domain/po/Order.class

@@ -1,0 +1,16 @@
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/service/IOrderService.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/mapper/OrderDetailMapper.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/mapper/OrderLogisticsMapper.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/TradeApplication.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/service/impl/OrderDetailServiceImpl.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/service/IOrderLogisticsService.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/controller/OrderController.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/domain/po/OrderLogistics.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/domain/dto/OrderFormDTO.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/service/impl/OrderServiceImpl.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/domain/po/OrderDetail.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/service/impl/OrderLogisticsServiceImpl.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/mapper/OrderMapper.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/service/IOrderDetailService.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/domain/po/Order.java
+/Users/zjn_11/Desktop/HMALL/hmall/trade-service/src/main/java/com/zjn/trade/domain/vo/OrderVO.java

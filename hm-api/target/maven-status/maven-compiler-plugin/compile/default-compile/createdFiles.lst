@@ -1,0 +1,7 @@
+com/zjn/api/client/UserClient.class
+com/zjn/api/dto/ItemDTO.class
+com/zjn/api/config/DefaultFeignConfig.class
+com/zjn/api/dto/OrderDetailDTO.class
+com/zjn/api/client/TradeClient.class
+com/zjn/api/client/ItemClient.class
+com/zjn/api/client/CartClient.class
