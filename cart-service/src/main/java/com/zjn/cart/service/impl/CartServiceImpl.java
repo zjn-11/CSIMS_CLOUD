@@ -9,6 +9,7 @@ import com.hmall.common.utils.CollUtils;
 import com.hmall.common.utils.UserContext;
 import com.zjn.api.client.ItemClient;
 import com.zjn.api.dto.ItemDTO;
+import com.zjn.cart.config.CartProperties;
 import com.zjn.cart.domain.dto.CartFormDTO;
 import com.zjn.cart.domain.po.Cart;
 import com.zjn.cart.domain.vo.CartVO;
@@ -40,6 +41,8 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 //    private final RestTemplate restTemplate;
 //    private final DiscoveryClient discoveryClient;
     private final ItemClient itemClient;
+
+    private final CartProperties cartProperties;
 
     @Override
     public void addItem2Cart(CartFormDTO cartFormDTO) {
@@ -136,7 +139,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 
     private void checkCartsFull(Long userId) {
         int count = lambdaQuery().eq(Cart::getUserId, userId).count();
-        if (count >= 10) {
+        if (count >= cartProperties.getMaxItems()) {
             throw new BizIllegalException(StrUtil.format("用户购物车课程不能超过{}", 10));
         }
     }

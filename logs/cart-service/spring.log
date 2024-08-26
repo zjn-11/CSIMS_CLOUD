@@ -9072,3 +9072,248 @@ com.mysql.cj.exceptions.CJException: Unknown database '${hm.db.datebase}'
 16:04:52:891 DEBUG 73895 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?,?))
 16:04:52:892 DEBUG 73895 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: 1(Long), 100001511821(Long), 14741770661(Long)
 16:04:52:898 DEBUG 73895 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 2
+16:17:01:978  INFO 73895 --- [nacos-grpc-client-executor-260] com.alibaba.nacos.common.remote.client   : [33e6785b-64fb-448c-b62e-ee15532e590b_config-0] Receive server push request, request = ConfigChangeNotifyRequest, requestId = 204
+16:17:01:981  INFO 73895 --- [nacos-grpc-client-executor-260] com.alibaba.nacos.common.remote.client   : [33e6785b-64fb-448c-b62e-ee15532e590b_config-0] Ack server push request, request = ConfigChangeNotifyRequest, requestId = 204
+16:17:02:066  WARN 73895 --- [nacos.client.cachedata.internal.notifier] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[cart-service] & group[DEFAULT_GROUP]
+16:17:02:202  WARN 73895 --- [nacos.client.cachedata.internal.notifier] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[cart-service-local.yaml] & group[DEFAULT_GROUP]
+16:17:02:202  INFO 73895 --- [nacos.client.cachedata.internal.notifier] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-cart-service-local.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-cart-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-cart-service,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-shared-swagger.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-shared-logging.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-shared-jdbc.yaml,DEFAULT_GROUP'}]
+16:17:02:212  INFO 73895 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : The following 1 profile is active: "local"
+16:17:02:218  INFO 73895 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : Started application in 0.203 seconds (JVM running for 781.761)
+16:17:02:266  INFO 73895 --- [nacos.client.cachedata.internal.notifier] o.s.c.e.event.RefreshEventListener       : Refresh keys changed: [hm.cart.maxItems]
+16:17:33:443  WARN 73895 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:17:33:443  WARN 73895 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:17:33:444  WARN 73895 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:17:33:445  WARN 73895 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:17:33:473  INFO 73895 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+16:17:33:477  INFO 73895 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+16:17:33:786  INFO 73895 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+16:17:33:786  INFO 73895 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@14d7a1c3[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+16:17:33:786  INFO 73895 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724513164450_192.168.121.1_54459
+16:17:33:790  INFO 73895 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@599fbe2b[Running, pool size = 7, active threads = 0, queued tasks = 0, completed tasks = 262]
+16:17:33:810  INFO 73895 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+16:17:33:831  INFO 73895 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+16:17:37:114  INFO 75070 --- [main] com.zjn.cart.CartApplication             : The following 1 profile is active: "local"
+16:17:37:444  INFO 75070 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+16:17:37:445  INFO 75070 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:17:37:454  INFO 75070 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+16:17:37:561  INFO 75070 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=92ac5cc1-d694-3dbc-9925-e0db11e41bb0
+16:17:37:764  INFO 75070 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+16:17:37:775  INFO 75070 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:17:37:775  INFO 75070 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+16:17:37:852  INFO 75070 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:17:37:853  INFO 75070 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 731 ms
+16:17:37:953  INFO 75070 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+16:17:38:511  INFO 75070 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+16:17:38:853  INFO 75070 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of b8bee9d5-c940-45c2-96bf-5383bebc6f92
+16:17:38:853  INFO 75070 --- [main] com.alibaba.nacos.common.remote.client   : [b8bee9d5-c940-45c2-96bf-5383bebc6f92] RpcClient init label, labels = {module=naming, source=sdk}
+16:17:38:854  INFO 75070 --- [main] com.alibaba.nacos.common.remote.client   : [b8bee9d5-c940-45c2-96bf-5383bebc6f92] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+16:17:38:855  INFO 75070 --- [main] com.alibaba.nacos.common.remote.client   : [b8bee9d5-c940-45c2-96bf-5383bebc6f92] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+16:17:38:855  INFO 75070 --- [main] com.alibaba.nacos.common.remote.client   : [b8bee9d5-c940-45c2-96bf-5383bebc6f92] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+16:17:38:855  INFO 75070 --- [main] com.alibaba.nacos.common.remote.client   : [b8bee9d5-c940-45c2-96bf-5383bebc6f92] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+16:17:39:009  INFO 75070 --- [main] com.alibaba.nacos.common.remote.client   : [b8bee9d5-c940-45c2-96bf-5383bebc6f92] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724513979695_192.168.121.1_60220
+16:17:39:009  INFO 75070 --- [main] com.alibaba.nacos.common.remote.client   : [b8bee9d5-c940-45c2-96bf-5383bebc6f92] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+16:17:39:009  INFO 75070 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [b8bee9d5-c940-45c2-96bf-5383bebc6f92] Notify connected event to listeners.
+16:17:39:010  INFO 75070 --- [main] com.alibaba.nacos.common.remote.client   : [b8bee9d5-c940-45c2-96bf-5383bebc6f92] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x0000000800543040
+16:17:39:047  INFO 75070 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+16:17:39:058  INFO 75070 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 10.71.59.104:8082 register finished
+16:17:39:065  INFO 75070 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+16:17:39:067  INFO 75070 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+16:17:39:081  INFO 75070 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+16:17:39:129  INFO 75070 --- [main] com.zjn.cart.CartApplication             : Started CartApplication in 2.933 seconds (JVM running for 3.277)
+16:17:39:132  INFO 75070 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service, group=DEFAULT_GROUP
+16:17:39:132  INFO 75070 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service.yaml, group=DEFAULT_GROUP
+16:17:39:133  INFO 75070 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service-local.yaml, group=DEFAULT_GROUP
+16:17:39:595  INFO 75070 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [b8bee9d5-c940-45c2-96bf-5383bebc6f92] Receive server push request, request = NotifySubscriberRequest, requestId = 209
+16:17:39:597  INFO 75070 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [b8bee9d5-c940-45c2-96bf-5383bebc6f92] Ack server push request, request = NotifySubscriberRequest, requestId = 209
+16:17:44:431  INFO 75070 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:17:44:432  INFO 75070 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+16:17:44:433  INFO 75070 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+16:17:44:486  INFO 75070 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+16:17:44:655  INFO 75070 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+16:17:44:662 DEBUG 75070 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:17:44:675 DEBUG 75070 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+16:17:44:688 DEBUG 75070 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 0
+16:17:45:119 DEBUG 75070 --- [http-nio-8082-exec-2] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:17:45:119 DEBUG 75070 --- [http-nio-8082-exec-2] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+16:17:45:121 DEBUG 75070 --- [http-nio-8082-exec-2] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 0
+16:17:48:059 DEBUG 75070 --- [http-nio-8082-exec-3] c.z.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ? AND item_id = ?)
+16:17:48:059 DEBUG 75070 --- [http-nio-8082-exec-3] c.z.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 2120808(Long)
+16:17:48:061 DEBUG 75070 --- [http-nio-8082-exec-3] c.z.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:17:48:062 DEBUG 75070 --- [http-nio-8082-exec-3] c.z.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ?)
+16:17:48:062 DEBUG 75070 --- [http-nio-8082-exec-3] c.z.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+16:17:48:063 DEBUG 75070 --- [http-nio-8082-exec-3] c.z.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:17:48:084 DEBUG 75070 --- [http-nio-8082-exec-3] com.zjn.cart.mapper.CartMapper.insert    : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+16:17:48:085 DEBUG 75070 --- [http-nio-8082-exec-3] com.zjn.cart.mapper.CartMapper.insert    : ==> Parameters: 1(Long), 2120808(Long), 姬龙雪 guy laroche女包 GL经典手提包女牛皮大容量单肩包女欧美时尚包包女包GS1210001-06杏色(String), {}(String), 71800(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30694/267/398774087/90954/6fc143cf/5bf25358N14dadbf7.jpg!q70.jpg.webp(String)
+16:17:48:096 DEBUG 75070 --- [http-nio-8082-exec-3] com.zjn.cart.mapper.CartMapper.insert    : <==    Updates: 1
+16:17:48:144 DEBUG 75070 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:17:48:144 DEBUG 75070 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+16:17:48:149 DEBUG 75070 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 1
+16:17:48:156 DEBUG 75070 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=2120808 HTTP/1.1
+16:17:48:156 DEBUG 75070 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+16:17:48:156 DEBUG 75070 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:17:48:323 DEBUG 75070 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (166ms)
+16:17:48:323 DEBUG 75070 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+16:17:48:323 DEBUG 75070 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+16:17:48:323 DEBUG 75070 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Mon, 26 Aug 2024 08:17:48 GMT
+16:17:48:323 DEBUG 75070 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:17:48:323 DEBUG 75070 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:17:48:323 DEBUG 75070 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+16:17:48:323 DEBUG 75070 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"2120808","name":"姬龙雪 guy laroche女包 GL经典手提包女牛皮大容量单肩包女欧美时尚包包女包GS1210001-06杏色","price":71800,"stock":1,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30694/267/398774087/90954/6fc143cf/5bf25358N14dadbf7.jpg!q70.jpg.webp","category":"真皮包","brand":"姬龙雪","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:17:48:324 DEBUG 75070 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (402-byte body)
+16:17:48:758  INFO 75070 --- [nacos-grpc-client-executor-14] com.alibaba.nacos.common.remote.client   : [b8bee9d5-c940-45c2-96bf-5383bebc6f92] Receive server push request, request = NotifySubscriberRequest, requestId = 210
+16:17:48:758  INFO 75070 --- [nacos-grpc-client-executor-14] com.alibaba.nacos.common.remote.client   : [b8bee9d5-c940-45c2-96bf-5383bebc6f92] Ack server push request, request = NotifySubscriberRequest, requestId = 210
+16:17:50:214 DEBUG 75070 --- [http-nio-8082-exec-5] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:17:50:215 DEBUG 75070 --- [http-nio-8082-exec-5] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+16:17:50:218 DEBUG 75070 --- [http-nio-8082-exec-5] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 1
+16:17:50:220 DEBUG 75070 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=2120808 HTTP/1.1
+16:17:50:220 DEBUG 75070 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+16:17:50:220 DEBUG 75070 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:17:50:249 DEBUG 75070 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (29ms)
+16:17:50:250 DEBUG 75070 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+16:17:50:250 DEBUG 75070 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+16:17:50:250 DEBUG 75070 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Mon, 26 Aug 2024 08:17:50 GMT
+16:17:50:250 DEBUG 75070 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:17:50:250 DEBUG 75070 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:17:50:250 DEBUG 75070 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+16:17:50:250 DEBUG 75070 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"2120808","name":"姬龙雪 guy laroche女包 GL经典手提包女牛皮大容量单肩包女欧美时尚包包女包GS1210001-06杏色","price":71800,"stock":1,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30694/267/398774087/90954/6fc143cf/5bf25358N14dadbf7.jpg!q70.jpg.webp","category":"真皮包","brand":"姬龙雪","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:17:50:250 DEBUG 75070 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (402-byte body)
+16:17:54:365 DEBUG 75070 --- [http-nio-8082-exec-6] c.z.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ? AND item_id = ?)
+16:17:54:366 DEBUG 75070 --- [http-nio-8082-exec-6] c.z.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 40305713537(Long)
+16:17:54:368 DEBUG 75070 --- [http-nio-8082-exec-6] c.z.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:17:54:371 DEBUG 75070 --- [http-nio-8082-exec-6] c.z.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ?)
+16:17:54:371 DEBUG 75070 --- [http-nio-8082-exec-6] c.z.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+16:17:54:372 DEBUG 75070 --- [http-nio-8082-exec-6] c.z.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:17:54:392 ERROR 75070 --- [http-nio-8082-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.hmall.common.exception.BizIllegalException: 用户购物车课程不能超过10] with root cause
+
+com.hmall.common.exception.BizIllegalException: 用户购物车课程不能超过10
+	at com.zjn.cart.service.impl.CartServiceImpl.checkCartsFull(CartServiceImpl.java:143) ~[classes/:na]
+	at com.zjn.cart.service.impl.CartServiceImpl.addItem2Cart(CartServiceImpl.java:59) ~[classes/:na]
+	at com.zjn.cart.service.impl.CartServiceImpl$$FastClassBySpringCGLIB$$5831f91.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.23.jar:5.3.23]
+	at com.zjn.cart.service.impl.CartServiceImpl$$EnhancerBySpringCGLIB$$72e96075.addItem2Cart(<generated>) ~[classes/:na]
+	at com.zjn.cart.controller.CartController.addItem2Cart(CartController.java:28) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.68.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.68.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+16:18:29:848  INFO 75070 --- [nacos-grpc-client-executor-36] com.alibaba.nacos.common.remote.client   : [50ff66c7-ae1b-4774-9bfc-b11d4ce60da5_config-0] Receive server push request, request = ConfigChangeNotifyRequest, requestId = 211
+16:18:29:849  INFO 75070 --- [nacos-grpc-client-executor-36] com.alibaba.nacos.common.remote.client   : [50ff66c7-ae1b-4774-9bfc-b11d4ce60da5_config-0] Ack server push request, request = ConfigChangeNotifyRequest, requestId = 211
+16:18:29:929  WARN 75070 --- [nacos.client.cachedata.internal.notifier] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[cart-service] & group[DEFAULT_GROUP]
+16:18:29:938  WARN 75070 --- [nacos.client.cachedata.internal.notifier] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[cart-service-local.yaml] & group[DEFAULT_GROUP]
+16:18:29:938  INFO 75070 --- [nacos.client.cachedata.internal.notifier] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-cart-service-local.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-cart-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-cart-service,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-shared-swagger.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-shared-logging.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-shared-jdbc.yaml,DEFAULT_GROUP'}]
+16:18:30:097  INFO 75070 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : The following 1 profile is active: "local"
+16:18:30:105  INFO 75070 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : Started application in 0.235 seconds (JVM running for 54.253)
+16:18:30:154  INFO 75070 --- [nacos.client.cachedata.internal.notifier] o.s.c.e.event.RefreshEventListener       : Refresh keys changed: [hm.cart.maxItems]
+16:18:35:275 DEBUG 75070 --- [http-nio-8082-exec-7] c.z.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ? AND item_id = ?)
+16:18:35:277 DEBUG 75070 --- [http-nio-8082-exec-7] c.z.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 2120808(Long)
+16:18:35:281 DEBUG 75070 --- [http-nio-8082-exec-7] c.z.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:18:35:281 DEBUG 75070 --- [http-nio-8082-exec-7] c.zjn.cart.mapper.CartMapper.updateNum   : ==>  Preparing: UPDATE cart SET num = num + 1 WHERE user_id = ? AND item_id = ?
+16:18:35:282 DEBUG 75070 --- [http-nio-8082-exec-7] c.zjn.cart.mapper.CartMapper.updateNum   : ==> Parameters: 1(Long), 2120808(Long)
+16:18:35:289 DEBUG 75070 --- [http-nio-8082-exec-7] c.zjn.cart.mapper.CartMapper.updateNum   : <==    Updates: 1
+16:18:35:360 DEBUG 75070 --- [http-nio-8082-exec-8] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:18:35:360 DEBUG 75070 --- [http-nio-8082-exec-8] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+16:18:35:363 DEBUG 75070 --- [http-nio-8082-exec-8] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 1
+16:18:35:365 DEBUG 75070 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=2120808 HTTP/1.1
+16:18:35:365 DEBUG 75070 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+16:18:35:365 DEBUG 75070 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:18:35:384 DEBUG 75070 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (18ms)
+16:18:35:384 DEBUG 75070 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+16:18:35:384 DEBUG 75070 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+16:18:35:384 DEBUG 75070 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Mon, 26 Aug 2024 08:18:35 GMT
+16:18:35:384 DEBUG 75070 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:18:35:384 DEBUG 75070 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:18:35:384 DEBUG 75070 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+16:18:35:384 DEBUG 75070 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"2120808","name":"姬龙雪 guy laroche女包 GL经典手提包女牛皮大容量单肩包女欧美时尚包包女包GS1210001-06杏色","price":71800,"stock":1,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30694/267/398774087/90954/6fc143cf/5bf25358N14dadbf7.jpg!q70.jpg.webp","category":"真皮包","brand":"姬龙雪","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:18:35:384 DEBUG 75070 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (402-byte body)
+16:18:40:239 DEBUG 75070 --- [http-nio-8082-exec-9] c.z.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ? AND item_id = ?)
+16:18:40:239 DEBUG 75070 --- [http-nio-8082-exec-9] c.z.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 8533120(Long)
+16:18:40:241 DEBUG 75070 --- [http-nio-8082-exec-9] c.z.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:18:40:241 DEBUG 75070 --- [http-nio-8082-exec-9] c.z.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ?)
+16:18:40:242 DEBUG 75070 --- [http-nio-8082-exec-9] c.z.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+16:18:40:242 DEBUG 75070 --- [http-nio-8082-exec-9] c.z.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+16:18:40:243 DEBUG 75070 --- [http-nio-8082-exec-9] com.zjn.cart.mapper.CartMapper.insert    : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+16:18:40:244 DEBUG 75070 --- [http-nio-8082-exec-9] com.zjn.cart.mapper.CartMapper.insert    : ==> Parameters: 1(Long), 8533120(Long), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+16:18:40:247 DEBUG 75070 --- [http-nio-8082-exec-9] com.zjn.cart.mapper.CartMapper.insert    : <==    Updates: 1
+16:18:40:317 DEBUG 75070 --- [http-nio-8082-exec-10] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:18:40:317 DEBUG 75070 --- [http-nio-8082-exec-10] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+16:18:40:321 DEBUG 75070 --- [http-nio-8082-exec-10] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+16:18:40:324 DEBUG 75070 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=2120808 HTTP/1.1
+16:18:40:324 DEBUG 75070 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+16:18:40:324 DEBUG 75070 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:18:40:330 DEBUG 75070 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (6ms)
+16:18:40:330 DEBUG 75070 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+16:18:40:330 DEBUG 75070 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+16:18:40:330 DEBUG 75070 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Mon, 26 Aug 2024 08:18:40 GMT
+16:18:40:330 DEBUG 75070 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:18:40:330 DEBUG 75070 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:18:40:331 DEBUG 75070 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+16:18:40:331 DEBUG 75070 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"2120808","name":"姬龙雪 guy laroche女包 GL经典手提包女牛皮大容量单肩包女欧美时尚包包女包GS1210001-06杏色","price":71800,"stock":1,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30694/267/398774087/90954/6fc143cf/5bf25358N14dadbf7.jpg!q70.jpg.webp","category":"真皮包","brand":"姬龙雪","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9996,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:18:40:331 DEBUG 75070 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (784-byte body)
+16:18:44:344 DEBUG 75070 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.updateById  : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+16:18:44:345 DEBUG 75070 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.updateById  : ==> Parameters: 1(Integer), 15(Long)
+16:18:44:350 DEBUG 75070 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.updateById  : <==    Updates: 1
+16:18:44:365 DEBUG 75070 --- [http-nio-8082-exec-2] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:18:44:366 DEBUG 75070 --- [http-nio-8082-exec-2] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+16:18:44:370 DEBUG 75070 --- [http-nio-8082-exec-2] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+16:18:44:372 DEBUG 75070 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=2120808 HTTP/1.1
+16:18:44:372 DEBUG 75070 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+16:18:44:372 DEBUG 75070 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+16:18:44:385 DEBUG 75070 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (12ms)
+16:18:44:385 DEBUG 75070 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+16:18:44:385 DEBUG 75070 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+16:18:44:385 DEBUG 75070 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Mon, 26 Aug 2024 08:18:44 GMT
+16:18:44:385 DEBUG 75070 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+16:18:44:385 DEBUG 75070 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+16:18:44:385 DEBUG 75070 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+16:18:44:385 DEBUG 75070 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"2120808","name":"姬龙雪 guy laroche女包 GL经典手提包女牛皮大容量单肩包女欧美时尚包包女包GS1210001-06杏色","price":71800,"stock":1,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30694/267/398774087/90954/6fc143cf/5bf25358N14dadbf7.jpg!q70.jpg.webp","category":"真皮包","brand":"姬龙雪","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9996,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+16:18:44:386 DEBUG 75070 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (784-byte body)
