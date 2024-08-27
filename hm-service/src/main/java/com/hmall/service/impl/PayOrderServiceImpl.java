@@ -8,13 +8,12 @@ import com.hmall.common.utils.BeanUtils;
 import com.hmall.common.utils.UserContext;
 import com.hmall.domain.dto.PayApplyDTO;
 import com.hmall.domain.dto.PayOrderFormDTO;
-import com.hmall.domain.po.Order;
 import com.hmall.domain.po.PayOrder;
 import com.hmall.enums.PayStatus;
 import com.hmall.mapper.PayOrderMapper;
-import com.hmall.service.IOrderService;
 import com.hmall.service.IPayOrderService;
-import com.hmall.service.IUserService;
+import com.zjn.api.client.TradeClient;
+import com.zjn.api.client.UserClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -33,9 +32,11 @@ import java.time.LocalDateTime;
 @RequiredArgsConstructor
 public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> implements IPayOrderService {
 
-    private final IUserService userService;
+//    private final IUserService userService;
+    private final UserClient userClient;
 
-    private final IOrderService orderService;
+    private final TradeClient tradeClient;
+//    private final IOrderService orderService;
 
     @Override
     public String applyPayOrder(PayApplyDTO applyDTO) {
@@ -56,18 +57,20 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
             throw new BizIllegalException("交易已支付或关闭！");
         }
         // 3.尝试扣减余额
-        userService.deductMoney(payOrderFormDTO.getPw(), po.getAmount());
+//        userService.deductMoney(payOrderFormDTO.getPw(), po.getAmount());
+        userClient.deductMoney(payOrderFormDTO.getPw(), po.getAmount());
         // 4.修改支付单状态
         boolean success = markPayOrderSuccess(payOrderFormDTO.getId(), LocalDateTime.now());
         if (!success) {
             throw new BizIllegalException("交易已支付或关闭！");
         }
         // 5.修改订单状态
-        Order order = new Order();
-        order.setId(po.getBizOrderNo());
-        order.setStatus(2);
-        order.setPayTime(LocalDateTime.now());
-        orderService.updateById(order);
+//        Order order = new Order();
+//        order.setId(po.getBizOrderNo());
+//        order.setStatus(2);
+//        order.setPayTime(LocalDateTime.now());
+//        orderService.updateById(order);
+        tradeClient.markOrderPaySuccess(po.getBizOrderNo());
     }
 
     public boolean markPayOrderSuccess(Long id, LocalDateTime successTime) {

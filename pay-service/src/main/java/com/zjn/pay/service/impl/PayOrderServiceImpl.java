@@ -6,7 +6,6 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hmall.common.exception.BizIllegalException;
 import com.hmall.common.utils.BeanUtils;
 import com.hmall.common.utils.UserContext;
-import com.zjn.api.client.TradeClient;
 import com.zjn.api.client.UserClient;
 import com.zjn.pay.domain.dto.PayApplyDTO;
 import com.zjn.pay.domain.dto.PayOrderFormDTO;
@@ -15,6 +14,9 @@ import com.zjn.pay.enums.PayStatus;
 import com.zjn.pay.mapper.PayOrderMapper;
 import com.zjn.pay.service.IPayOrderService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -29,12 +31,14 @@ import java.time.LocalDateTime;
  * @since 2023-05-16
  */
 @Service
+@Slf4j
 @RequiredArgsConstructor
 public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> implements IPayOrderService {
 
     private final UserClient userClient;
 
-    private final TradeClient tradeClient;
+//    private final TradeClient tradeClient;
+    private final RabbitTemplate rabbitTemplate;
 
     @Override
     public String applyPayOrder(PayApplyDTO applyDTO) {
@@ -61,8 +65,14 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
         if (!success) {
             throw new BizIllegalException("交易已支付或关闭！");
         }
-        // 5.修改订单状态
-        tradeClient.markOrderPaySuccess(po.getBizOrderNo());
+        // TODO 5.修改订单状态
+//        tradeClient.markOrderPaySuccess(po.getBizOrderNo());
+        /*修改为通过RabbitMQ异步调用*/
+        try {
+            rabbitTemplate.convertAndSend("pay.direct", "pay.success", po.getBizOrderNo());
+        } catch (AmqpException e) {
+            log.error("发送支付状态通知失败，订单id：{}", po.getBizOrderNo(), e);
+        }
     }
 
     public boolean markPayOrderSuccess(Long id, LocalDateTime successTime) {

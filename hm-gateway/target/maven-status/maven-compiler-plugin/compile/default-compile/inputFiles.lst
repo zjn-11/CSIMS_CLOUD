@@ -4,5 +4,6 @@
 /Users/zjn_11/Desktop/HMALL/hmall/hm-gateway/src/main/java/com/zjn/gateway/config/AuthProperties.java
 /Users/zjn_11/Desktop/HMALL/hmall/hm-gateway/src/main/java/com/zjn/gateway/config/AntPathConfig.java
 /Users/zjn_11/Desktop/HMALL/hmall/hm-gateway/src/main/java/com/zjn/gateway/GatewayApplication.java
+/Users/zjn_11/Desktop/HMALL/hmall/hm-gateway/src/main/java/com/zjn/gateway/routers/DynamicRouteLoader.java
 /Users/zjn_11/Desktop/HMALL/hmall/hm-gateway/src/main/java/com/zjn/gateway/utils/JwtTool.java
 /Users/zjn_11/Desktop/HMALL/hmall/hm-gateway/src/main/java/com/zjn/gateway/filters/AuthGlobalFilter.java

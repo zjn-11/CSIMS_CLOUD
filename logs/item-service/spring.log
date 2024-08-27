@@ -4116,3 +4116,584 @@ com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: BIGINT UNSIGN
 13:16:45:792  INFO 25517 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service, group=DEFAULT_GROUP
 13:16:46:278  INFO 25517 --- [nacos-grpc-client-executor-10] com.alibaba.nacos.common.remote.client   : [f65426f2-d031-4b6c-84d3-1440e10aeb44] Receive server push request, request = NotifySubscriberRequest, requestId = 337
 13:16:46:281  INFO 25517 --- [nacos-grpc-client-executor-10] com.alibaba.nacos.common.remote.client   : [f65426f2-d031-4b6c-84d3-1440e10aeb44] Ack server push request, request = NotifySubscriberRequest, requestId = 337
+13:26:10:938  INFO 25517 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:26:10:939  INFO 25517 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+13:26:10:942  INFO 25517 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+13:26:10:998 DEBUG 25517 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+13:26:11:047 DEBUG 25517 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+13:26:11:067 DEBUG 25517 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+13:26:12:023 DEBUG 25517 --- [http-nio-8081-exec-2] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+13:26:12:034 DEBUG 25517 --- [http-nio-8081-exec-2] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+13:26:13:126  INFO 25517 --- [rpcDispatch_RMROLE_1_1_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282706,branchId=36586327609282714,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+13:26:13:128  INFO 25517 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282706 36586327609282714 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+13:26:13:129  INFO 25517 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+14:30:50:604  WARN 25517 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m5s253ms).
+14:42:21:493  WARN 25517 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m30s998ms).
+15:00:09:700  WARN 25517 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m48s206ms).
+15:02:19:224  WARN 25517 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m9s525ms).
+15:15:22:395  WARN 25517 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m3s171ms).
+15:33:20:523  WARN 25517 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m58s128ms).
+15:34:23:097  WARN 25517 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s573ms).
+15:40:35:533  WARN 25517 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m12s437ms).
+15:41:44:113  WARN 25517 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s580ms).
+15:42:33:061  WARN 25517 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s947ms).
+15:49:31:084  WARN 25517 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m58s23ms).
+18:34:05:810  INFO 25517 --- [nacos-grpc-client-executor-3024] com.alibaba.nacos.common.remote.client   : [5d62657c-9d7c-42a2-adb3-e8306da1ebd5_config-0] Receive server push request, request = ClientDetectionRequest, requestId = 363
+18:34:05:823  INFO 25517 --- [nacos-grpc-client-executor-3024] com.alibaba.nacos.common.remote.client   : [5d62657c-9d7c-42a2-adb3-e8306da1ebd5_config-0] Ack server push request, request = ClientDetectionRequest, requestId = 363
+18:34:06:002  INFO 25517 --- [nacos-grpc-client-executor-3110] com.alibaba.nacos.common.remote.client   : [162d55aa-fb51-405a-94fb-7e42d704b90a] Receive server push request, request = NotifySubscriberRequest, requestId = 371
+18:34:06:002  INFO 25517 --- [nacos-grpc-client-executor-3110] com.alibaba.nacos.common.remote.client   : [162d55aa-fb51-405a-94fb-7e42d704b90a] Ack server push request, request = NotifySubscriberRequest, requestId = 371
+18:38:36:624  WARN 25517 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+18:38:36:624  WARN 25517 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+18:38:36:625  WARN 25517 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+18:38:36:632  WARN 25517 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+18:38:36:785  INFO 25517 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+18:38:36:789  INFO 25517 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+18:38:37:098  INFO 25517 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+18:38:37:098  INFO 25517 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@cfdf89a[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+18:38:37:098  INFO 25517 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724552554489_192.168.121.1_49639
+18:38:37:105  INFO 25517 --- [nacos-grpc-client-executor-3127] c.a.n.c.remote.client.grpc.GrpcClient    : [1724552554489_192.168.121.1_49639]Ignore complete event,isRunning:false,isAbandon=false
+18:38:37:120  INFO 25517 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@5544b592[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 3128]
+18:38:37:147  INFO 25517 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:38:37:217  INFO 25517 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:38:37:222  INFO 25517 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x1ff565b3, L:/192.168.121.1:49609 ! R:/192.168.121.128:8099]
+18:38:37:223  INFO 25517 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x1ff565b3, L:/192.168.121.1:49609 ! R:/192.168.121.128:8099]
+18:38:37:226  INFO 25517 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x1ff565b3, L:/192.168.121.1:49609 ! R:/192.168.121.128:8099]
+18:38:37:227  INFO 25517 --- [NettyClientSelector_TMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x1ff565b3, L:/192.168.121.1:49609 ! R:/192.168.121.128:8099]
+18:38:37:228  INFO 25517 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x1ff565b3, L:/192.168.121.1:49609 ! R:/192.168.121.128:8099]) will closed
+18:38:37:229  INFO 25517 --- [NettyClientSelector_TMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x1ff565b3, L:/192.168.121.1:49609 ! R:/192.168.121.128:8099]) will closed
+18:38:37:238  INFO 25517 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0xe03860ad, L:/192.168.121.1:49620 ! R:/192.168.121.128:8099]
+18:38:37:238  INFO 25517 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0xe03860ad, L:/192.168.121.1:49620 ! R:/192.168.121.128:8099]
+18:38:37:238  INFO 25517 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0xe03860ad, L:/192.168.121.1:49620 ! R:/192.168.121.128:8099]
+18:38:37:242  INFO 25517 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xe03860ad, L:/192.168.121.1:49620 ! R:/192.168.121.128:8099]
+18:38:37:242  INFO 25517 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xe03860ad, L:/192.168.121.1:49620 ! R:/192.168.121.128:8099]) will closed
+18:38:37:242  INFO 25517 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xe03860ad, L:/192.168.121.1:49620 ! R:/192.168.121.128:8099]) will closed
+18:38:44:591  INFO 41578 --- [main] com.zjn.item.ItemApplication             : The following 1 profile is active: "local"
+18:38:45:084 ERROR 41578 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Error processing condition on com.hmall.common.config.MyBatisConfig.mybatisPlusInterceptor
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at com.zjn.item.ItemApplication.main(ItemApplication.java:11) ~[classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.hmall.common.config.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@7c53a9eb]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:250) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:243) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:233) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:181) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:156) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/amqp/support/converter/MessageConverter
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.23.jar:5.3.23]
+	... 33 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.amqp.support.converter.MessageConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	... 37 common frames omitted
+
+18:38:45:087  WARN 41578 --- [main] o.s.boot.SpringApplication               : Unable to close ApplicationContext
+
+java.lang.IllegalStateException: Failed to introspect Class [com.hmall.common.config.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@7c53a9eb]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:669) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:661) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1300) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:867) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:855) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:842) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:782) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at com.zjn.item.ItemApplication.main(ItemApplication.java:11) ~[classes/:na]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/amqp/support/converter/MessageConverter
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.23.jar:5.3.23]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.amqp.support.converter.MessageConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	... 25 common frames omitted
+
+18:40:54:123  INFO 41722 --- [main] com.zjn.item.ItemApplication             : The following 1 profile is active: "local"
+18:40:54:640  INFO 41722 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:40:54:641  INFO 41722 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:40:54:653  INFO 41722 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+18:40:54:860  INFO 41722 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=03195cf0-dc81-3ffe-acf9-5292d1c90fb8
+18:40:54:927  INFO 41722 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:54:927  INFO 41722 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:54:928  INFO 41722 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:54:957  INFO 41722 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:54:963  INFO 41722 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:54:964  INFO 41722 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:54:965  INFO 41722 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$583/0x0000000800697840] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:54:966  INFO 41722 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:54:969  INFO 41722 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:54:972  INFO 41722 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:54:974  INFO 41722 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+18:40:55:035  INFO 41722 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+18:40:55:042  INFO 41722 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+18:40:55:111  INFO 41722 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+18:40:55:162  INFO 41722 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+18:40:55:392  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 3e477177-c6b3-43ad-bfaf-2a4766185981
+18:40:55:392  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [3e477177-c6b3-43ad-bfaf-2a4766185981] RpcClient init label, labels = {module=naming, source=sdk}
+18:40:55:394  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [3e477177-c6b3-43ad-bfaf-2a4766185981] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+18:40:55:394  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [3e477177-c6b3-43ad-bfaf-2a4766185981] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+18:40:55:395  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [3e477177-c6b3-43ad-bfaf-2a4766185981] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+18:40:55:395  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [3e477177-c6b3-43ad-bfaf-2a4766185981] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+18:40:55:533  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [3e477177-c6b3-43ad-bfaf-2a4766185981] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724755255460_192.168.121.1_54880
+18:40:55:533  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [3e477177-c6b3-43ad-bfaf-2a4766185981] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+18:40:55:533  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [3e477177-c6b3-43ad-bfaf-2a4766185981] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x000000080044e440
+18:40:55:534  INFO 41722 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3e477177-c6b3-43ad-bfaf-2a4766185981] Notify connected event to listeners.
+18:40:55:567  INFO 41722 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.121.128:8099
+18:40:55:589  INFO 41722 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.121.128:8099,msg:< RegisterTMRequest{applicationId='item-service', transactionServiceGroup='default_tx_group'} >
+18:40:55:657  INFO 41722 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x4d1c170d, L:/192.168.121.1:54881 - R:/192.168.121.128:8099]
+18:40:55:660  INFO 41722 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 39 ms, version:1.5.2,role:TMROLE,channel:[id: 0x4d1c170d, L:/192.168.121.1:54881 - R:/192.168.121.128:8099]
+18:40:55:661  INFO 41722 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[item-service] txServiceGroup[default_tx_group]
+18:40:55:665  INFO 41722 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+18:40:55:666  INFO 41722 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+18:40:55:670  INFO 41722 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+18:40:55:670  INFO 41722 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[item-service] txServiceGroup[default_tx_group]
+18:40:55:670  INFO 41722 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+18:40:55:671  INFO 41722 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:55:724  INFO 41722 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:55:725  INFO 41722 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:55:848  INFO 41722 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+18:40:55:853  INFO 41722 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:40:55:853  INFO 41722 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+18:40:55:917  INFO 41722 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:40:55:917  INFO 41722 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1787 ms
+18:40:56:039  INFO 41722 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:40:56:122  INFO 41722 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [3e477177-c6b3-43ad-bfaf-2a4766185981] Receive server push request, request = NotifySubscriberRequest, requestId = 383
+18:40:56:122  INFO 41722 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [3e477177-c6b3-43ad-bfaf-2a4766185981] Ack server push request, request = NotifySubscriberRequest, requestId = 383
+18:40:56:226  INFO 41722 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:40:56:263  INFO 41722 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.121.128:8099
+18:40:56:263  INFO 41722 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://192.168.121.128:3306/hm-item
+18:40:56:264  INFO 41722 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.121.128:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://192.168.121.128:3306/hm-item', applicationId='item-service', transactionServiceGroup='default_tx_group'} >
+18:40:56:277  INFO 41722 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x308ac226, L:/192.168.121.1:54883 - R:/192.168.121.128:8099]
+18:40:56:277  INFO 41722 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 12 ms, version:1.5.2,role:RMROLE,channel:[id: 0x308ac226, L:/192.168.121.1:54883 - R:/192.168.121.128:8099]
+18:40:56:687  INFO 41722 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:40:57:358  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 01bb9627-1f8d-4c5b-9880-e3bb8752c94e
+18:40:57:358  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [01bb9627-1f8d-4c5b-9880-e3bb8752c94e] RpcClient init label, labels = {module=naming, source=sdk}
+18:40:57:358  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [01bb9627-1f8d-4c5b-9880-e3bb8752c94e] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+18:40:57:358  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [01bb9627-1f8d-4c5b-9880-e3bb8752c94e] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+18:40:57:358  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [01bb9627-1f8d-4c5b-9880-e3bb8752c94e] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+18:40:57:359  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [01bb9627-1f8d-4c5b-9880-e3bb8752c94e] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+18:40:57:481  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [01bb9627-1f8d-4c5b-9880-e3bb8752c94e] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724755257406_192.168.121.1_54898
+18:40:57:481  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [01bb9627-1f8d-4c5b-9880-e3bb8752c94e] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+18:40:57:481  INFO 41722 --- [main] com.alibaba.nacos.common.remote.client   : [01bb9627-1f8d-4c5b-9880-e3bb8752c94e] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x000000080044e440
+18:40:57:481  INFO 41722 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [01bb9627-1f8d-4c5b-9880-e3bb8752c94e] Notify connected event to listeners.
+18:40:57:500  INFO 41722 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+18:40:57:506  INFO 41722 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP item-service 10.71.59.104:8081 register finished
+18:40:57:509  INFO 41722 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:40:57:511  INFO 41722 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:40:57:523  INFO 41722 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:40:57:580  INFO 41722 --- [main] com.zjn.item.ItemApplication             : Started ItemApplication in 5.143 seconds (JVM running for 5.683)
+18:40:57:583  INFO 41722 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service.yaml, group=DEFAULT_GROUP
+18:40:57:583  INFO 41722 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service-local.yaml, group=DEFAULT_GROUP
+18:40:57:584  INFO 41722 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service, group=DEFAULT_GROUP
+18:40:58:025  INFO 41722 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [01bb9627-1f8d-4c5b-9880-e3bb8752c94e] Receive server push request, request = NotifySubscriberRequest, requestId = 384
+18:40:58:028  INFO 41722 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [01bb9627-1f8d-4c5b-9880-e3bb8752c94e] Ack server push request, request = NotifySubscriberRequest, requestId = 384
+18:41:05:331  INFO 41722 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:41:05:331  INFO 41722 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:41:05:335  INFO 41722 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+18:41:05:384 DEBUG 41722 --- [http-nio-8081-exec-2] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+18:41:05:384 DEBUG 41722 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+18:41:05:396 DEBUG 41722 --- [http-nio-8081-exec-2] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+18:41:05:396 DEBUG 41722 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+18:41:05:414 DEBUG 41722 --- [http-nio-8081-exec-2] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+18:41:05:414 DEBUG 41722 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+18:41:06:496 DEBUG 41722 --- [http-nio-8081-exec-3] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+18:41:06:496 DEBUG 41722 --- [http-nio-8081-exec-3] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+18:41:06:498 DEBUG 41722 --- [http-nio-8081-exec-3] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+18:41:07:214 DEBUG 41722 --- [http-nio-8081-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+18:41:07:215 DEBUG 41722 --- [http-nio-8081-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+18:41:07:219 DEBUG 41722 --- [http-nio-8081-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+18:41:12:475 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+18:41:12:507 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+18:41:12:510 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+18:41:13:021 DEBUG 41722 --- [http-nio-8081-exec-6] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+18:41:13:030 DEBUG 41722 --- [http-nio-8081-exec-6] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+18:41:13:366  INFO 41722 --- [rpcDispatch_RMROLE_1_1_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282717,branchId=36586327609282723,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+18:41:13:367  INFO 41722 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282717 36586327609282723 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+18:41:13:368  INFO 41722 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+18:41:40:345 DEBUG 41722 --- [http-nio-8081-exec-7] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+18:41:40:347 DEBUG 41722 --- [http-nio-8081-exec-7] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+18:41:40:352 DEBUG 41722 --- [http-nio-8081-exec-7] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+18:41:50:478 DEBUG 41722 --- [http-nio-8081-exec-8] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+18:41:50:484 DEBUG 41722 --- [http-nio-8081-exec-8] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+18:41:50:498 DEBUG 41722 --- [http-nio-8081-exec-8] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+18:41:50:609 DEBUG 41722 --- [http-nio-8081-exec-9] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+18:41:50:609 DEBUG 41722 --- [http-nio-8081-exec-9] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+18:41:51:356  INFO 41722 --- [rpcDispatch_RMROLE_1_2_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282726,branchId=36586327609282732,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+18:41:51:356  INFO 41722 --- [rpcDispatch_RMROLE_1_2_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282726 36586327609282732 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+18:41:51:357  INFO 41722 --- [rpcDispatch_RMROLE_1_2_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+18:43:42:452  WARN 41722 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s112ms).
+18:45:12:879  WARN 41722 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s909ms).
+18:56:07:547 DEBUG 41722 --- [http-nio-8081-exec-3] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+18:56:07:549 DEBUG 41722 --- [http-nio-8081-exec-3] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+18:56:07:553 DEBUG 41722 --- [http-nio-8081-exec-3] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+18:56:22:042 DEBUG 41722 --- [http-nio-8081-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+18:56:22:044 DEBUG 41722 --- [http-nio-8081-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+18:56:22:045 DEBUG 41722 --- [http-nio-8081-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+18:56:22:123 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+18:56:22:124 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+18:56:23:098  INFO 41722 --- [rpcDispatch_RMROLE_1_3_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282735,branchId=36586327609282742,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+18:56:23:104  INFO 41722 --- [rpcDispatch_RMROLE_1_3_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282735 36586327609282742 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+18:56:23:104  INFO 41722 --- [rpcDispatch_RMROLE_1_3_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:06:32:592 DEBUG 41722 --- [http-nio-8081-exec-8] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:06:32:593 DEBUG 41722 --- [http-nio-8081-exec-8] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:06:32:598 DEBUG 41722 --- [http-nio-8081-exec-8] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+19:06:39:250 DEBUG 41722 --- [http-nio-8081-exec-9] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+19:06:39:251 DEBUG 41722 --- [http-nio-8081-exec-9] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+19:06:39:253 DEBUG 41722 --- [http-nio-8081-exec-9] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+19:06:39:358 DEBUG 41722 --- [http-nio-8081-exec-10] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+19:06:39:359 DEBUG 41722 --- [http-nio-8081-exec-10] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+19:06:39:696  INFO 41722 --- [rpcDispatch_RMROLE_1_4_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282745,branchId=36586327609282751,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+19:06:39:696  INFO 41722 --- [rpcDispatch_RMROLE_1_4_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282745 36586327609282751 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+19:06:39:696  INFO 41722 --- [rpcDispatch_RMROLE_1_4_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:06:54:917 DEBUG 41722 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:06:54:922 DEBUG 41722 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:06:54:926 DEBUG 41722 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+19:07:08:466 DEBUG 41722 --- [http-nio-8081-exec-2] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+19:07:08:468 DEBUG 41722 --- [http-nio-8081-exec-2] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+19:07:08:470 DEBUG 41722 --- [http-nio-8081-exec-2] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+19:07:08:563 DEBUG 41722 --- [http-nio-8081-exec-3] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+19:07:08:563 DEBUG 41722 --- [http-nio-8081-exec-3] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+19:07:09:270  INFO 41722 --- [rpcDispatch_RMROLE_1_5_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282754,branchId=36586327609282760,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+19:07:09:270  INFO 41722 --- [rpcDispatch_RMROLE_1_5_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282754 36586327609282760 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+19:07:09:270  INFO 41722 --- [rpcDispatch_RMROLE_1_5_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:07:18:535 DEBUG 41722 --- [http-nio-8081-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:07:18:536 DEBUG 41722 --- [http-nio-8081-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:07:18:537 DEBUG 41722 --- [http-nio-8081-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+19:07:21:787 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+19:07:21:788 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+19:07:21:799 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+19:07:21:874 DEBUG 41722 --- [http-nio-8081-exec-6] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+19:07:21:875 DEBUG 41722 --- [http-nio-8081-exec-6] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+19:07:22:157  INFO 41722 --- [rpcDispatch_RMROLE_1_6_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282763,branchId=36586327609282769,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+19:07:22:158  INFO 41722 --- [rpcDispatch_RMROLE_1_6_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282763 36586327609282769 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+19:07:22:158  INFO 41722 --- [rpcDispatch_RMROLE_1_6_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:07:46:831 DEBUG 41722 --- [http-nio-8081-exec-7] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:07:46:839 DEBUG 41722 --- [http-nio-8081-exec-7] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:07:46:852 DEBUG 41722 --- [http-nio-8081-exec-7] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+19:07:50:149 DEBUG 41722 --- [http-nio-8081-exec-8] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+19:07:50:150 DEBUG 41722 --- [http-nio-8081-exec-8] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+19:07:50:154 DEBUG 41722 --- [http-nio-8081-exec-8] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+19:07:50:250 DEBUG 41722 --- [http-nio-8081-exec-9] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+19:07:50:251 DEBUG 41722 --- [http-nio-8081-exec-9] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+19:07:50:782  INFO 41722 --- [rpcDispatch_RMROLE_1_7_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282772,branchId=36586327609282778,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+19:07:50:782  INFO 41722 --- [rpcDispatch_RMROLE_1_7_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282772 36586327609282778 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+19:07:50:782  INFO 41722 --- [rpcDispatch_RMROLE_1_7_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:24:44:625 DEBUG 41722 --- [http-nio-8081-exec-2] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:24:44:626 DEBUG 41722 --- [http-nio-8081-exec-2] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:24:44:630 DEBUG 41722 --- [http-nio-8081-exec-2] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+19:25:31:571 DEBUG 41722 --- [http-nio-8081-exec-3] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+19:25:31:573 DEBUG 41722 --- [http-nio-8081-exec-3] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+19:25:31:575 DEBUG 41722 --- [http-nio-8081-exec-3] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+19:25:31:673 DEBUG 41722 --- [http-nio-8081-exec-4] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+19:25:31:674 DEBUG 41722 --- [http-nio-8081-exec-4] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+19:25:32:433  INFO 41722 --- [rpcDispatch_RMROLE_1_8_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282781,branchId=36586327609282787,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+19:25:32:434  INFO 41722 --- [rpcDispatch_RMROLE_1_8_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282781 36586327609282787 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+19:25:32:434  INFO 41722 --- [rpcDispatch_RMROLE_1_8_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:25:40:805 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:25:40:805 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:25:40:807 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+19:25:45:933 DEBUG 41722 --- [http-nio-8081-exec-6] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+19:25:45:934 DEBUG 41722 --- [http-nio-8081-exec-6] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+19:25:45:936 DEBUG 41722 --- [http-nio-8081-exec-6] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+19:25:46:023 DEBUG 41722 --- [http-nio-8081-exec-7] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+19:25:46:024 DEBUG 41722 --- [http-nio-8081-exec-7] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+19:25:46:409  INFO 41722 --- [rpcDispatch_RMROLE_1_9_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282790,branchId=36586327609282796,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+19:25:46:410  INFO 41722 --- [rpcDispatch_RMROLE_1_9_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282790 36586327609282796 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+19:25:46:410  INFO 41722 --- [rpcDispatch_RMROLE_1_9_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:26:25:563 DEBUG 41722 --- [http-nio-8081-exec-8] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:26:25:564 DEBUG 41722 --- [http-nio-8081-exec-8] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:26:25:565 DEBUG 41722 --- [http-nio-8081-exec-8] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+19:26:34:268 DEBUG 41722 --- [http-nio-8081-exec-9] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:26:34:269 DEBUG 41722 --- [http-nio-8081-exec-9] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:26:34:277 DEBUG 41722 --- [http-nio-8081-exec-9] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+19:26:48:006 DEBUG 41722 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+19:26:48:007 DEBUG 41722 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+19:26:48:009 DEBUG 41722 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+19:26:48:056 DEBUG 41722 --- [http-nio-8081-exec-2] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+19:26:48:056 DEBUG 41722 --- [http-nio-8081-exec-2] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+19:26:48:407  INFO 41722 --- [rpcDispatch_RMROLE_1_10_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282799,branchId=36586327609282805,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+19:26:48:407  INFO 41722 --- [rpcDispatch_RMROLE_1_10_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282799 36586327609282805 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+19:26:48:407  INFO 41722 --- [rpcDispatch_RMROLE_1_10_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:30:30:739 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:30:30:740 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:30:30:743 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+19:30:35:443 DEBUG 41722 --- [http-nio-8081-exec-6] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+19:30:35:444 DEBUG 41722 --- [http-nio-8081-exec-6] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+19:30:35:446 DEBUG 41722 --- [http-nio-8081-exec-6] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+19:30:35:529 DEBUG 41722 --- [http-nio-8081-exec-7] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+19:30:35:530 DEBUG 41722 --- [http-nio-8081-exec-7] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+19:30:36:418  INFO 41722 --- [rpcDispatch_RMROLE_1_11_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282808,branchId=36586327609282814,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+19:30:36:419  INFO 41722 --- [rpcDispatch_RMROLE_1_11_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282808 36586327609282814 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+19:30:36:419  INFO 41722 --- [rpcDispatch_RMROLE_1_11_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:37:53:516 DEBUG 41722 --- [http-nio-8081-exec-10] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:37:53:519 DEBUG 41722 --- [http-nio-8081-exec-10] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:37:53:525 DEBUG 41722 --- [http-nio-8081-exec-10] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+19:37:57:494 DEBUG 41722 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+19:37:57:496 DEBUG 41722 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+19:37:57:498 DEBUG 41722 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+19:37:57:575 DEBUG 41722 --- [http-nio-8081-exec-2] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+19:37:57:575 DEBUG 41722 --- [http-nio-8081-exec-2] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+19:37:58:422  INFO 41722 --- [rpcDispatch_RMROLE_1_12_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282817,branchId=36586327609282823,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+19:37:58:422  INFO 41722 --- [rpcDispatch_RMROLE_1_12_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282817 36586327609282823 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+19:37:58:422  INFO 41722 --- [rpcDispatch_RMROLE_1_12_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:40:49:089 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:40:49:091 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:40:49:094 DEBUG 41722 --- [http-nio-8081-exec-5] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+19:40:52:164 DEBUG 41722 --- [http-nio-8081-exec-6] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+19:40:52:167 DEBUG 41722 --- [http-nio-8081-exec-6] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+19:40:52:171 DEBUG 41722 --- [http-nio-8081-exec-6] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+19:40:52:274 DEBUG 41722 --- [http-nio-8081-exec-7] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+19:40:52:275 DEBUG 41722 --- [http-nio-8081-exec-7] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+19:40:52:421  INFO 41722 --- [rpcDispatch_RMROLE_1_13_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282826,branchId=36586327609282832,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+19:40:52:421  INFO 41722 --- [rpcDispatch_RMROLE_1_13_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282826 36586327609282832 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+19:40:52:422  INFO 41722 --- [rpcDispatch_RMROLE_1_13_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:45:00:282  WARN 41722 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+19:45:00:282  WARN 41722 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+19:45:00:283  WARN 41722 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+19:45:00:285  WARN 41722 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+19:45:00:415  INFO 41722 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+19:45:00:431  INFO 41722 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+19:45:00:739  INFO 41722 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+19:45:00:739  INFO 41722 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@596bccfa[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+19:45:00:739  INFO 41722 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724755257406_192.168.121.1_54898
+19:45:00:745  INFO 41722 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@534f1ab8[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 932]
+19:45:00:753  INFO 41722 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+19:45:00:798  INFO 41722 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+19:45:00:801  INFO 41722 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x308ac226, L:/192.168.121.1:54883 ! R:/192.168.121.128:8099]
+19:45:00:802  INFO 41722 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x308ac226, L:/192.168.121.1:54883 ! R:/192.168.121.128:8099]
+19:45:00:802  INFO 41722 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x308ac226, L:/192.168.121.1:54883 ! R:/192.168.121.128:8099]
+19:45:00:803  INFO 41722 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x308ac226, L:/192.168.121.1:54883 ! R:/192.168.121.128:8099]
+19:45:00:805  INFO 41722 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x308ac226, L:/192.168.121.1:54883 ! R:/192.168.121.128:8099]) will closed
+19:45:00:806  INFO 41722 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x308ac226, L:/192.168.121.1:54883 ! R:/192.168.121.128:8099]) will closed
+19:45:29:129  INFO 46841 --- [main] com.zjn.item.ItemApplication             : The following 1 profile is active: "local"
+19:45:29:799  INFO 46841 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+19:45:29:800  INFO 46841 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:45:29:819  INFO 46841 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+19:45:30:020  INFO 46841 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=03195cf0-dc81-3ffe-acf9-5292d1c90fb8
+19:45:30:056  INFO 46841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:30:056  INFO 46841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:30:056  INFO 46841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:30:070  INFO 46841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:30:072  INFO 46841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:30:073  INFO 46841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:30:073  INFO 46841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$583/0x0000000800697840] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:30:074  INFO 46841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:30:076  INFO 46841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:30:077  INFO 46841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:30:078  INFO 46841 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+19:45:30:111  INFO 46841 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+19:45:30:113  INFO 46841 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+19:45:30:145  INFO 46841 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+19:45:30:173  INFO 46841 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+19:45:30:309  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 0f364407-b16a-4821-b4f1-e98beac8fe7a
+19:45:30:310  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [0f364407-b16a-4821-b4f1-e98beac8fe7a] RpcClient init label, labels = {module=naming, source=sdk}
+19:45:30:311  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [0f364407-b16a-4821-b4f1-e98beac8fe7a] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+19:45:30:311  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [0f364407-b16a-4821-b4f1-e98beac8fe7a] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+19:45:30:314  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [0f364407-b16a-4821-b4f1-e98beac8fe7a] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+19:45:30:316  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [0f364407-b16a-4821-b4f1-e98beac8fe7a] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+19:45:30:446  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [0f364407-b16a-4821-b4f1-e98beac8fe7a] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724759130307_192.168.121.1_65505
+19:45:30:446  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [0f364407-b16a-4821-b4f1-e98beac8fe7a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+19:45:30:446  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [0f364407-b16a-4821-b4f1-e98beac8fe7a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x000000080044e440
+19:45:30:446  INFO 46841 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [0f364407-b16a-4821-b4f1-e98beac8fe7a] Notify connected event to listeners.
+19:45:30:467  INFO 46841 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.121.128:8099
+19:45:30:482  INFO 46841 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.121.128:8099,msg:< RegisterTMRequest{applicationId='item-service', transactionServiceGroup='default_tx_group'} >
+19:45:30:539  INFO 46841 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x525cda68, L:/192.168.121.1:65511 - R:/192.168.121.128:8099]
+19:45:30:543  INFO 46841 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 32 ms, version:1.5.2,role:TMROLE,channel:[id: 0x525cda68, L:/192.168.121.1:65511 - R:/192.168.121.128:8099]
+19:45:30:543  INFO 46841 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[item-service] txServiceGroup[default_tx_group]
+19:45:30:547  INFO 46841 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+19:45:30:547  INFO 46841 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+19:45:30:551  INFO 46841 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+19:45:30:551  INFO 46841 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[item-service] txServiceGroup[default_tx_group]
+19:45:30:551  INFO 46841 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+19:45:30:552  INFO 46841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:30:607  INFO 46841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:30:609  INFO 46841 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:30:742  INFO 46841 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+19:45:30:749  INFO 46841 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:45:30:749  INFO 46841 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+19:45:30:750  INFO 46845 --- [main] com.zjn.item.ItemApplication             : The following 1 profile is active: "local"
+19:45:30:893  INFO 46841 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:45:30:893  INFO 46841 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1756 ms
+19:45:31:053  INFO 46841 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [0f364407-b16a-4821-b4f1-e98beac8fe7a] Receive server push request, request = NotifySubscriberRequest, requestId = 401
+19:45:31:054  INFO 46841 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [0f364407-b16a-4821-b4f1-e98beac8fe7a] Ack server push request, request = NotifySubscriberRequest, requestId = 401
+19:45:31:093  INFO 46841 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+19:45:31:647  INFO 46845 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+19:45:31:648  INFO 46845 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:45:31:698  INFO 46841 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+19:45:31:717  INFO 46845 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+19:45:31:767  INFO 46841 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.121.128:8099
+19:45:31:767  INFO 46841 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://192.168.121.128:3306/hm-item
+19:45:31:767  INFO 46841 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.121.128:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://192.168.121.128:3306/hm-item', applicationId='item-service', transactionServiceGroup='default_tx_group'} >
+19:45:31:789  INFO 46841 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x6ca5fc0d, L:/192.168.121.1:65533 - R:/192.168.121.128:8099]
+19:45:31:789  INFO 46841 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 18 ms, version:1.5.2,role:RMROLE,channel:[id: 0x6ca5fc0d, L:/192.168.121.1:65533 - R:/192.168.121.128:8099]
+19:45:31:918  INFO 46845 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=03195cf0-dc81-3ffe-acf9-5292d1c90fb8
+19:45:31:994  INFO 46845 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:31:994  INFO 46845 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:31:994  INFO 46845 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:32:006  INFO 46845 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:32:008  INFO 46845 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:32:010  INFO 46845 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:32:011  INFO 46845 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$583/0x0000000800697840] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:32:011  INFO 46845 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:32:016  INFO 46845 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:32:022  INFO 46845 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:32:025  INFO 46845 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+19:45:32:066  INFO 46845 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+19:45:32:068  INFO 46845 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+19:45:32:098  INFO 46845 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+19:45:32:138  INFO 46845 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+19:45:32:280  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of fafa2f2f-332b-4fb9-b348-011de14c96ae
+19:45:32:280  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [fafa2f2f-332b-4fb9-b348-011de14c96ae] RpcClient init label, labels = {module=naming, source=sdk}
+19:45:32:281  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [fafa2f2f-332b-4fb9-b348-011de14c96ae] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+19:45:32:281  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [fafa2f2f-332b-4fb9-b348-011de14c96ae] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+19:45:32:282  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [fafa2f2f-332b-4fb9-b348-011de14c96ae] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+19:45:32:283  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [fafa2f2f-332b-4fb9-b348-011de14c96ae] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+19:45:32:404  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [fafa2f2f-332b-4fb9-b348-011de14c96ae] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724759132271_192.168.121.1_49167
+19:45:32:404  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [fafa2f2f-332b-4fb9-b348-011de14c96ae] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+19:45:32:405  INFO 46845 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [fafa2f2f-332b-4fb9-b348-011de14c96ae] Notify connected event to listeners.
+19:45:32:406  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [fafa2f2f-332b-4fb9-b348-011de14c96ae] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x000000080044e440
+19:45:32:456  INFO 46845 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.121.128:8099
+19:45:32:474  INFO 46845 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.121.128:8099,msg:< RegisterTMRequest{applicationId='item-service', transactionServiceGroup='default_tx_group'} >
+19:45:32:486  INFO 46841 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+19:45:32:532  INFO 46845 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x7f1ed61c, L:/192.168.121.1:49168 - R:/192.168.121.128:8099]
+19:45:32:536  INFO 46845 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 29 ms, version:1.5.2,role:TMROLE,channel:[id: 0x7f1ed61c, L:/192.168.121.1:49168 - R:/192.168.121.128:8099]
+19:45:32:536  INFO 46845 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[item-service] txServiceGroup[default_tx_group]
+19:45:32:539  INFO 46845 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+19:45:32:540  INFO 46845 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+19:45:32:544  INFO 46845 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+19:45:32:544  INFO 46845 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[item-service] txServiceGroup[default_tx_group]
+19:45:32:544  INFO 46845 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+19:45:32:545  INFO 46845 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:32:606  INFO 46845 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:32:607  INFO 46845 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:32:773  INFO 46845 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+19:45:32:790  INFO 46845 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:45:32:790  INFO 46845 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+19:45:32:904  INFO 46845 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:45:32:905  INFO 46845 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2148 ms
+19:45:32:965  INFO 46845 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [fafa2f2f-332b-4fb9-b348-011de14c96ae] Receive server push request, request = NotifySubscriberRequest, requestId = 403
+19:45:32:966  INFO 46845 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [fafa2f2f-332b-4fb9-b348-011de14c96ae] Ack server push request, request = NotifySubscriberRequest, requestId = 403
+19:45:33:247  INFO 46845 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+19:45:33:456  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 44f7df18-b562-4571-b323-30e62f3a987a
+19:45:33:457  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [44f7df18-b562-4571-b323-30e62f3a987a] RpcClient init label, labels = {module=naming, source=sdk}
+19:45:33:457  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [44f7df18-b562-4571-b323-30e62f3a987a] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+19:45:33:457  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [44f7df18-b562-4571-b323-30e62f3a987a] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+19:45:33:459  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [44f7df18-b562-4571-b323-30e62f3a987a] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+19:45:33:462  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [44f7df18-b562-4571-b323-30e62f3a987a] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+19:45:33:516  INFO 46845 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+19:45:33:582  INFO 46845 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.121.128:8099
+19:45:33:583  INFO 46845 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://192.168.121.128:3306/hm-item
+19:45:33:583  INFO 46845 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.121.128:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://192.168.121.128:3306/hm-item', applicationId='item-service', transactionServiceGroup='default_tx_group'} >
+19:45:33:627  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [44f7df18-b562-4571-b323-30e62f3a987a] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724759133458_192.168.121.1_49191
+19:45:33:627  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [44f7df18-b562-4571-b323-30e62f3a987a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+19:45:33:627  INFO 46841 --- [main] com.alibaba.nacos.common.remote.client   : [44f7df18-b562-4571-b323-30e62f3a987a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x000000080044e440
+19:45:33:627  INFO 46841 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [44f7df18-b562-4571-b323-30e62f3a987a] Notify connected event to listeners.
+19:45:33:628  INFO 46845 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x517379e0, L:/192.168.121.1:49194 - R:/192.168.121.128:8099]
+19:45:33:628  INFO 46845 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 41 ms, version:1.5.2,role:RMROLE,channel:[id: 0x517379e0, L:/192.168.121.1:49194 - R:/192.168.121.128:8099]
+19:45:33:710  INFO 46841 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+19:45:33:722  INFO 46841 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP item-service 10.71.59.104:8081 register finished
+19:45:33:727  INFO 46841 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+19:45:33:734  INFO 46841 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+19:45:33:806  INFO 46841 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+19:45:34:170  INFO 46841 --- [main] com.zjn.item.ItemApplication             : Started ItemApplication in 6.48 seconds (JVM running for 6.998)
+19:45:34:174  INFO 46841 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service.yaml, group=DEFAULT_GROUP
+19:45:34:182  INFO 46841 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service-local.yaml, group=DEFAULT_GROUP
+19:45:34:182  INFO 46841 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service, group=DEFAULT_GROUP
+19:45:34:271  INFO 46841 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [44f7df18-b562-4571-b323-30e62f3a987a] Receive server push request, request = NotifySubscriberRequest, requestId = 404
+19:45:34:280  INFO 46841 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [44f7df18-b562-4571-b323-30e62f3a987a] Ack server push request, request = NotifySubscriberRequest, requestId = 404
+19:45:34:797  INFO 46845 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+19:45:35:936  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 29df0f34-579e-4378-81e7-7068b5a5b28f
+19:45:35:937  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [29df0f34-579e-4378-81e7-7068b5a5b28f] RpcClient init label, labels = {module=naming, source=sdk}
+19:45:35:939  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [29df0f34-579e-4378-81e7-7068b5a5b28f] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+19:45:35:939  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [29df0f34-579e-4378-81e7-7068b5a5b28f] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+19:45:35:939  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [29df0f34-579e-4378-81e7-7068b5a5b28f] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+19:45:35:940  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [29df0f34-579e-4378-81e7-7068b5a5b28f] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+19:45:36:091  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [29df0f34-579e-4378-81e7-7068b5a5b28f] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724759135931_192.168.121.1_49233
+19:45:36:110  INFO 46845 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [29df0f34-579e-4378-81e7-7068b5a5b28f] Notify connected event to listeners.
+19:45:36:110  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [29df0f34-579e-4378-81e7-7068b5a5b28f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+19:45:36:116  INFO 46845 --- [main] com.alibaba.nacos.common.remote.client   : [29df0f34-579e-4378-81e7-7068b5a5b28f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x000000080044e440
+19:45:36:192  INFO 46845 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+19:45:36:213  INFO 46845 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP item-service 10.71.59.104:8083 register finished
+19:45:36:219  INFO 46845 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+19:45:36:223  INFO 46845 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+19:45:36:268  INFO 46845 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+19:45:36:560  INFO 46845 --- [main] com.zjn.item.ItemApplication             : Started ItemApplication in 7.299 seconds (JVM running for 7.73)
+19:45:36:571  INFO 46845 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service.yaml, group=DEFAULT_GROUP
+19:45:36:571  INFO 46845 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service-local.yaml, group=DEFAULT_GROUP
+19:45:36:572  INFO 46845 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service, group=DEFAULT_GROUP
+19:45:36:691  INFO 46845 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [29df0f34-579e-4378-81e7-7068b5a5b28f] Receive server push request, request = NotifySubscriberRequest, requestId = 405
+19:45:36:695  INFO 46845 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [29df0f34-579e-4378-81e7-7068b5a5b28f] Ack server push request, request = NotifySubscriberRequest, requestId = 405
+19:45:36:708  INFO 46841 --- [nacos-grpc-client-executor-10] com.alibaba.nacos.common.remote.client   : [44f7df18-b562-4571-b323-30e62f3a987a] Receive server push request, request = NotifySubscriberRequest, requestId = 406
+19:45:36:713  INFO 46841 --- [nacos-grpc-client-executor-10] com.alibaba.nacos.common.remote.client   : [44f7df18-b562-4571-b323-30e62f3a987a] Ack server push request, request = NotifySubscriberRequest, requestId = 406
+19:45:54:994  INFO 46845 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:45:54:995  INFO 46845 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+19:45:55:000  INFO 46845 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+19:45:55:094 DEBUG 46845 --- [http-nio-8083-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:45:55:105 DEBUG 46845 --- [http-nio-8083-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:45:55:120 DEBUG 46845 --- [http-nio-8083-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+19:48:38:252  INFO 46841 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:48:38:253  INFO 46841 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+19:48:38:262  INFO 46841 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+19:48:38:320 DEBUG 46841 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:48:38:333 DEBUG 46841 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:48:38:354 DEBUG 46841 --- [http-nio-8081-exec-1] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2
+19:48:42:985 DEBUG 46845 --- [http-nio-8083-exec-3] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+19:48:43:023 DEBUG 46845 --- [http-nio-8083-exec-3] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+19:48:43:035 DEBUG 46845 --- [http-nio-8083-exec-3] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+19:48:43:534 DEBUG 46841 --- [http-nio-8081-exec-2] c.z.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+19:48:43:573 DEBUG 46841 --- [http-nio-8081-exec-2] c.z.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+19:48:44:392  INFO 46841 --- [rpcDispatch_RMROLE_1_1_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.121.128:8099:36586327609282835,branchId=36586327609282842,branchType=AT,resourceId=jdbc:mysql://192.168.121.128:3306/hm-item,applicationData={"autoCommit":false}
+19:48:44:394  INFO 46841 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.121.128:8099:36586327609282835 36586327609282842 jdbc:mysql://192.168.121.128:3306/hm-item {"autoCommit":false}
+19:48:44:394  INFO 46841 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+19:48:51:217 DEBUG 46845 --- [http-nio-8083-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? )
+19:48:51:217 DEBUG 46845 --- [http-nio-8083-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 1533902(Long)
+19:48:51:219 DEBUG 46845 --- [http-nio-8083-exec-4] c.z.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 2

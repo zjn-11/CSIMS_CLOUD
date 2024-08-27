@@ -1,8 +1,10 @@
-com/zjn/gateway/config/SecurityConfig.class
-com/zjn/gateway/config/AntPathConfig.class
 com/zjn/gateway/config/AuthProperties.class
-com/zjn/gateway/filters/MyGlobalFilter.class
 com/zjn/gateway/GatewayApplication.class
 com/zjn/gateway/config/JwtProperties.class
 com/zjn/gateway/filters/AuthGlobalFilter.class
+com/zjn/gateway/config/SecurityConfig.class
+com/zjn/gateway/config/AntPathConfig.class
+com/zjn/gateway/filters/MyGlobalFilter.class
+com/zjn/gateway/routers/DynamicRouteLoader.class
+com/zjn/gateway/routers/DynamicRouteLoader$1.class
 com/zjn/gateway/utils/JwtTool.class

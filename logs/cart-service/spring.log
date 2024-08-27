@@ -2466,3 +2466,668 @@
 13:16:39:807  INFO 25496 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service-local.yaml, group=DEFAULT_GROUP
 13:16:40:244  INFO 25496 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [06fb5b61-4c92-4511-93d7-4931fbd145b8] Receive server push request, request = NotifySubscriberRequest, requestId = 331
 13:16:40:249  INFO 25496 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [06fb5b61-4c92-4511-93d7-4931fbd145b8] Ack server push request, request = NotifySubscriberRequest, requestId = 331
+13:26:11:503  INFO 25496 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:26:11:504  INFO 25496 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+13:26:11:507  INFO 25496 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+13:26:11:842 DEBUG 25496 --- [http-nio-8082-exec-1] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+13:26:11:901 DEBUG 25496 --- [http-nio-8082-exec-1] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+13:26:11:969 DEBUG 25496 --- [http-nio-8082-exec-1] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+14:30:19:896  WARN 25496 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m40s642ms).
+14:32:04:596  WARN 25496 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m44s703ms).
+14:59:38:973  WARN 25496 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m34s377ms).
+15:01:48:565  WARN 25496 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m9s592ms).
+15:15:06:334  WARN 25496 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m17s769ms).
+15:33:14:413  WARN 25496 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m8s79ms).
+15:34:16:984  WARN 25496 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s570ms).
+15:38:39:162  WARN 25496 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m22s179ms).
+15:41:37:993  WARN 25496 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m58s831ms).
+15:42:26:953  WARN 25496 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s960ms).
+15:49:24:970  WARN 25496 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m58s17ms).
+18:34:05:805  INFO 25496 --- [nacos-grpc-client-executor-3116] com.alibaba.nacos.common.remote.client   : [06fb5b61-4c92-4511-93d7-4931fbd145b8] Receive server push request, request = ClientDetectionRequest, requestId = 362
+18:34:05:814  INFO 25496 --- [nacos-grpc-client-executor-3116] com.alibaba.nacos.common.remote.client   : [06fb5b61-4c92-4511-93d7-4931fbd145b8] Ack server push request, request = ClientDetectionRequest, requestId = 362
+18:34:06:002  INFO 25496 --- [nacos-grpc-client-executor-3136] com.alibaba.nacos.common.remote.client   : [d906e35b-8ddf-4c99-84ec-578451bd330c] Receive server push request, request = NotifySubscriberRequest, requestId = 370
+18:34:06:003  INFO 25496 --- [nacos-grpc-client-executor-3136] com.alibaba.nacos.common.remote.client   : [d906e35b-8ddf-4c99-84ec-578451bd330c] Ack server push request, request = NotifySubscriberRequest, requestId = 370
+18:38:36:540  WARN 25496 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+18:38:36:540  WARN 25496 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+18:38:36:542  WARN 25496 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+18:38:36:547  WARN 25496 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+18:38:36:695  INFO 25496 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+18:38:36:704  INFO 25496 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+18:38:37:023  INFO 25496 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+18:38:37:023  INFO 25496 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@a2936fb[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+18:38:37:023  INFO 25496 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724552548512_192.168.121.1_49560
+18:38:37:031  INFO 25496 --- [nacos-grpc-client-executor-3174] c.a.n.c.remote.client.grpc.GrpcClient    : [1724552548512_192.168.121.1_49560]Ignore complete event,isRunning:false,isAbandon=false
+18:38:37:034  INFO 25496 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@414fb91[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 3175]
+18:38:37:054  INFO 25496 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:38:37:135  INFO 25496 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:38:37:175  INFO 25496 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x96116348, L:/192.168.121.1:49534 ! R:/192.168.121.128:8099]
+18:38:37:177  INFO 25496 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x96116348, L:/192.168.121.1:49534 ! R:/192.168.121.128:8099]
+18:38:37:178  INFO 25496 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x96116348, L:/192.168.121.1:49534 ! R:/192.168.121.128:8099]
+18:38:37:178  INFO 25496 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x96116348, L:/192.168.121.1:49534 ! R:/192.168.121.128:8099]
+18:38:37:179  INFO 25496 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x96116348, L:/192.168.121.1:49534 ! R:/192.168.121.128:8099]) will closed
+18:38:37:179  INFO 25496 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x96116348, L:/192.168.121.1:49534 ! R:/192.168.121.128:8099]) will closed
+18:38:41:773  INFO 41560 --- [main] com.zjn.cart.CartApplication             : The following 1 profile is active: "local"
+18:38:42:240 ERROR 41560 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Error processing condition on com.hmall.common.config.MyBatisConfig.mybatisPlusInterceptor
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at com.zjn.cart.CartApplication.main(CartApplication.java:14) ~[classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.hmall.common.config.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@7c53a9eb]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:250) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:243) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:233) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:181) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:156) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-2.7.5.jar:2.7.5]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/amqp/support/converter/MessageConverter
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.23.jar:5.3.23]
+	... 33 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.amqp.support.converter.MessageConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	... 37 common frames omitted
+
+18:38:42:242  WARN 41560 --- [main] o.s.boot.SpringApplication               : Unable to close ApplicationContext
+
+java.lang.IllegalStateException: Failed to introspect Class [com.hmall.common.config.MqConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@7c53a9eb]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.23.jar:5.3.23]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:669) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:661) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1300) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:867) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:855) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:842) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:782) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at com.zjn.cart.CartApplication.main(CartApplication.java:14) ~[classes/:na]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/amqp/support/converter/MessageConverter
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.23.jar:5.3.23]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.amqp.support.converter.MessageConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	... 25 common frames omitted
+
+18:40:48:601  INFO 41713 --- [main] com.zjn.cart.CartApplication             : The following 1 profile is active: "local"
+18:40:49:029  INFO 41713 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:40:49:031  INFO 41713 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:40:49:042  INFO 41713 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+18:40:49:171  INFO 41713 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d8187fe6-3625-3245-ae05-5809fe670c04
+18:40:49:210  INFO 41713 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:49:210  INFO 41713 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:49:210  INFO 41713 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:49:222  INFO 41713 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:49:224  INFO 41713 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:49:225  INFO 41713 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:49:225  INFO 41713 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$586/0x0000000800695c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:49:225  INFO 41713 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:49:227  INFO 41713 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:49:228  INFO 41713 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:49:230  INFO 41713 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+18:40:49:257  INFO 41713 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+18:40:49:260  INFO 41713 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+18:40:49:294  INFO 41713 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+18:40:49:323  INFO 41713 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+18:40:49:453  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 6ca260b3-fcbe-43bb-922f-7ab5326f080a
+18:40:49:454  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [6ca260b3-fcbe-43bb-922f-7ab5326f080a] RpcClient init label, labels = {module=naming, source=sdk}
+18:40:49:455  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [6ca260b3-fcbe-43bb-922f-7ab5326f080a] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+18:40:49:455  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [6ca260b3-fcbe-43bb-922f-7ab5326f080a] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+18:40:49:455  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [6ca260b3-fcbe-43bb-922f-7ab5326f080a] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+18:40:49:456  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [6ca260b3-fcbe-43bb-922f-7ab5326f080a] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+18:40:49:573  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [6ca260b3-fcbe-43bb-922f-7ab5326f080a] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724755249505_192.168.121.1_54819
+18:40:49:573  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [6ca260b3-fcbe-43bb-922f-7ab5326f080a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+18:40:49:573  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [6ca260b3-fcbe-43bb-922f-7ab5326f080a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x00000008004d6c40
+18:40:49:574  INFO 41713 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [6ca260b3-fcbe-43bb-922f-7ab5326f080a] Notify connected event to listeners.
+18:40:49:620  INFO 41713 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.121.128:8099
+18:40:49:638  INFO 41713 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.121.128:8099,msg:< RegisterTMRequest{applicationId='cart-service', transactionServiceGroup='default_tx_group'} >
+18:40:49:754  INFO 41713 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0xe5a9d061, L:/192.168.121.1:54825 - R:/192.168.121.128:8099]
+18:40:49:760  INFO 41713 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 65 ms, version:1.5.2,role:TMROLE,channel:[id: 0xe5a9d061, L:/192.168.121.1:54825 - R:/192.168.121.128:8099]
+18:40:49:760  INFO 41713 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[cart-service] txServiceGroup[default_tx_group]
+18:40:49:771  INFO 41713 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+18:40:49:772  INFO 41713 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+18:40:49:777  INFO 41713 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+18:40:49:778  INFO 41713 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[cart-service] txServiceGroup[default_tx_group]
+18:40:49:778  INFO 41713 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+18:40:49:781  INFO 41713 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:49:966  INFO 41713 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:49:967  INFO 41713 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:40:50:156  INFO 41713 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:40:50:162  INFO 41713 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:40:50:162  INFO 41713 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+18:40:50:191  INFO 41713 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [6ca260b3-fcbe-43bb-922f-7ab5326f080a] Receive server push request, request = NotifySubscriberRequest, requestId = 380
+18:40:50:192  INFO 41713 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [6ca260b3-fcbe-43bb-922f-7ab5326f080a] Ack server push request, request = NotifySubscriberRequest, requestId = 380
+18:40:50:257  INFO 41713 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:40:50:257  INFO 41713 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1648 ms
+18:40:50:454  INFO 41713 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+18:40:50:694  INFO 41713 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:40:50:848  INFO 41713 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:40:50:888  INFO 41713 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.121.128:8099
+18:40:50:888  INFO 41713 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://192.168.121.128:3306/hm-cart
+18:40:50:888  INFO 41713 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.121.128:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://192.168.121.128:3306/hm-cart', applicationId='cart-service', transactionServiceGroup='default_tx_group'} >
+18:40:50:931  INFO 41713 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x0df4c3bf, L:/192.168.121.1:54833 - R:/192.168.121.128:8099]
+18:40:50:931  INFO 41713 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 35 ms, version:1.5.2,role:RMROLE,channel:[id: 0x0df4c3bf, L:/192.168.121.1:54833 - R:/192.168.121.128:8099]
+18:40:51:190  INFO 41713 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+18:40:51:480  INFO 41713 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:40:52:398  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of b09666dc-aefc-4001-82b7-c387f1860d69
+18:40:52:398  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [b09666dc-aefc-4001-82b7-c387f1860d69] RpcClient init label, labels = {module=naming, source=sdk}
+18:40:52:398  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [b09666dc-aefc-4001-82b7-c387f1860d69] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+18:40:52:399  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [b09666dc-aefc-4001-82b7-c387f1860d69] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+18:40:52:399  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [b09666dc-aefc-4001-82b7-c387f1860d69] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+18:40:52:399  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [b09666dc-aefc-4001-82b7-c387f1860d69] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+18:40:52:526  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [b09666dc-aefc-4001-82b7-c387f1860d69] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724755252455_192.168.121.1_54859
+18:40:52:526  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [b09666dc-aefc-4001-82b7-c387f1860d69] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+18:40:52:526  INFO 41713 --- [main] com.alibaba.nacos.common.remote.client   : [b09666dc-aefc-4001-82b7-c387f1860d69] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x00000008004d6c40
+18:40:52:527  INFO 41713 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [b09666dc-aefc-4001-82b7-c387f1860d69] Notify connected event to listeners.
+18:40:52:609  INFO 41713 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:40:52:626  INFO 41713 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 10.71.59.104:8082 register finished
+18:40:52:634  INFO 41713 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:40:52:642  INFO 41713 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:40:52:678  INFO 41713 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:40:52:880  INFO 41713 --- [main] com.zjn.cart.CartApplication             : Started CartApplication in 5.499 seconds (JVM running for 5.894)
+18:40:52:894  INFO 41713 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service, group=DEFAULT_GROUP
+18:40:52:896  INFO 41713 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service.yaml, group=DEFAULT_GROUP
+18:40:52:896  INFO 41713 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service-local.yaml, group=DEFAULT_GROUP
+18:40:53:144  INFO 41713 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [b09666dc-aefc-4001-82b7-c387f1860d69] Receive server push request, request = NotifySubscriberRequest, requestId = 381
+18:40:53:151  INFO 41713 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [b09666dc-aefc-4001-82b7-c387f1860d69] Ack server push request, request = NotifySubscriberRequest, requestId = 381
+18:41:05:015  INFO 41713 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:41:05:016  INFO 41713 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:41:05:021  INFO 41713 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+18:41:05:139 DEBUG 41713 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+18:41:05:150 DEBUG 41713 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+18:41:05:164 DEBUG 41713 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+18:41:05:188 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+18:41:05:188 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+18:41:05:188 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+18:41:05:236 DEBUG 41713 --- [http-nio-8082-exec-2] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+18:41:05:236 DEBUG 41713 --- [http-nio-8082-exec-2] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+18:41:05:239 DEBUG 41713 --- [http-nio-8082-exec-2] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+18:41:05:240 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+18:41:05:240 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+18:41:05:240 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (211ms)
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (262ms)
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 10:41:05 GMT
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 10:41:05 GMT
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+18:41:05:451 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+18:41:05:452 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9995,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+18:41:05:452 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9995,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+18:41:05:452 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+18:41:05:452 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+18:41:05:853  INFO 41713 --- [nacos-grpc-client-executor-16] com.alibaba.nacos.common.remote.client   : [b09666dc-aefc-4001-82b7-c387f1860d69] Receive server push request, request = NotifySubscriberRequest, requestId = 386
+18:41:05:854  INFO 41713 --- [nacos-grpc-client-executor-16] com.alibaba.nacos.common.remote.client   : [b09666dc-aefc-4001-82b7-c387f1860d69] Ack server push request, request = NotifySubscriberRequest, requestId = 386
+18:41:06:487 DEBUG 41713 --- [http-nio-8082-exec-3] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+18:41:06:488 DEBUG 41713 --- [http-nio-8082-exec-3] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+18:41:06:491 DEBUG 41713 --- [http-nio-8082-exec-3] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+18:41:06:492 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+18:41:06:492 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+18:41:06:492 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+18:41:06:500 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (7ms)
+18:41:06:500 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+18:41:06:500 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+18:41:06:500 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 10:41:06 GMT
+18:41:06:500 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+18:41:06:500 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+18:41:06:500 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+18:41:06:501 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9995,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+18:41:06:501 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+18:41:07:203 DEBUG 41713 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+18:41:07:204 DEBUG 41713 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+18:41:07:207 DEBUG 41713 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+18:41:07:209 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+18:41:07:209 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+18:41:07:209 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+18:41:07:221 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (12ms)
+18:41:07:221 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+18:41:07:221 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+18:41:07:221 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 10:41:06 GMT
+18:41:07:221 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+18:41:07:221 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+18:41:07:221 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+18:41:07:221 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9995,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+18:41:07:222 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+18:41:12:854 DEBUG 41713 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+18:41:12:931 DEBUG 41713 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+18:41:12:994 DEBUG 41713 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+18:41:40:285 DEBUG 41713 --- [http-nio-8082-exec-6] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+18:41:40:289 DEBUG 41713 --- [http-nio-8082-exec-6] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+18:41:40:306 DEBUG 41713 --- [http-nio-8082-exec-6] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+18:41:40:317 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+18:41:40:317 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+18:41:40:318 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+18:41:40:359 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (41ms)
+18:41:40:359 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+18:41:40:359 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+18:41:40:360 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 10:41:40 GMT
+18:41:40:360 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+18:41:40:360 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+18:41:40:360 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+18:41:40:361 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9994,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+18:41:40:361 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+18:41:50:597 DEBUG 41713 --- [http-nio-8082-exec-7] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+18:41:50:598 DEBUG 41713 --- [http-nio-8082-exec-7] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+18:41:50:601 DEBUG 41713 --- [http-nio-8082-exec-7] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+18:44:21:131  WARN 41713 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m30s159ms).
+18:45:07:106  WARN 41713 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s976ms).
+18:56:07:523 DEBUG 41713 --- [http-nio-8082-exec-10] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+18:56:07:525 DEBUG 41713 --- [http-nio-8082-exec-10] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+18:56:07:529 DEBUG 41713 --- [http-nio-8082-exec-10] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+18:56:07:530 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+18:56:07:530 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+18:56:07:530 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+18:56:07:563 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (32ms)
+18:56:07:563 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+18:56:07:563 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+18:56:07:563 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 10:56:07 GMT
+18:56:07:563 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+18:56:07:563 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+18:56:07:563 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+18:56:07:564 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9993,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+18:56:07:564 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+18:56:22:114 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+18:56:22:115 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+18:56:22:117 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+19:06:32:571 DEBUG 41713 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:06:32:572 DEBUG 41713 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:06:32:577 DEBUG 41713 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:06:32:579 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:06:32:580 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:06:32:580 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:06:32:606 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (26ms)
+19:06:32:606 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:06:32:606 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:06:32:606 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:06:32 GMT
+19:06:32:606 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:06:32:606 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:06:32:606 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:06:32:607 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9992,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:06:32:607 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+19:06:39:344 DEBUG 41713 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+19:06:39:344 DEBUG 41713 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+19:06:39:352 DEBUG 41713 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+19:06:54:841 DEBUG 41713 --- [http-nio-8082-exec-6] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:06:54:842 DEBUG 41713 --- [http-nio-8082-exec-6] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:06:54:850 DEBUG 41713 --- [http-nio-8082-exec-6] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:06:54:860 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:06:54:861 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:06:54:861 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:06:54:930 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (68ms)
+19:06:54:930 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:06:54:930 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:06:54:930 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:06:54 GMT
+19:06:54:930 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:06:54:930 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:06:54:930 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:06:54:931 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9991,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:06:54:931 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+19:07:08:553 DEBUG 41713 --- [http-nio-8082-exec-7] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+19:07:08:554 DEBUG 41713 --- [http-nio-8082-exec-7] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+19:07:08:557 DEBUG 41713 --- [http-nio-8082-exec-7] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+19:07:18:515 DEBUG 41713 --- [http-nio-8082-exec-8] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:07:18:515 DEBUG 41713 --- [http-nio-8082-exec-8] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:07:18:518 DEBUG 41713 --- [http-nio-8082-exec-8] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:07:18:530 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:07:18:530 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:07:18:530 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:07:18:539 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (8ms)
+19:07:18:539 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:07:18:539 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:07:18:539 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:07:18 GMT
+19:07:18:539 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:07:18:539 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:07:18:539 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:07:18:539 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9990,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:07:18:540 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+19:07:21:862 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+19:07:21:863 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+19:07:21:866 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+19:07:46:807 DEBUG 41713 --- [http-nio-8082-exec-10] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:07:46:809 DEBUG 41713 --- [http-nio-8082-exec-10] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:07:46:812 DEBUG 41713 --- [http-nio-8082-exec-10] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:07:46:814 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:07:46:814 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:07:46:814 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:07:46:856 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (41ms)
+19:07:46:856 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:07:46:856 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:07:46:856 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:07:46 GMT
+19:07:46:856 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:07:46:856 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:07:46:856 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:07:46:856 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9989,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:07:46:856 DEBUG 41713 --- [http-nio-8082-exec-10] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+19:07:50:240 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+19:07:50:241 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+19:07:50:243 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+19:24:44:600 DEBUG 41713 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:24:44:601 DEBUG 41713 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:24:44:603 DEBUG 41713 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:24:44:606 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:24:44:606 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:24:44:606 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:24:44:633 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (26ms)
+19:24:44:633 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:24:44:633 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:24:44:633 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:24:44 GMT
+19:24:44:633 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:24:44:633 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:24:44:633 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:24:44:633 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9988,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:24:44:634 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+19:25:31:657 DEBUG 41713 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+19:25:31:658 DEBUG 41713 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+19:25:31:666 DEBUG 41713 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+19:25:40:791 DEBUG 41713 --- [http-nio-8082-exec-6] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:25:40:792 DEBUG 41713 --- [http-nio-8082-exec-6] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:25:40:795 DEBUG 41713 --- [http-nio-8082-exec-6] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:25:40:797 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:25:40:798 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:25:40:798 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:25:40:808 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (10ms)
+19:25:40:809 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:25:40:809 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:25:40:809 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:25:40 GMT
+19:25:40:809 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:25:40:809 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:25:40:809 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:25:40:809 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9987,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:25:40:809 DEBUG 41713 --- [http-nio-8082-exec-6] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+19:25:46:010 DEBUG 41713 --- [http-nio-8082-exec-7] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+19:25:46:011 DEBUG 41713 --- [http-nio-8082-exec-7] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+19:25:46:013 DEBUG 41713 --- [http-nio-8082-exec-7] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+19:26:25:516 DEBUG 41713 --- [http-nio-8082-exec-8] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:26:25:517 DEBUG 41713 --- [http-nio-8082-exec-8] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:26:25:519 DEBUG 41713 --- [http-nio-8082-exec-8] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:26:25:524 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:26:25:524 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:26:25:524 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:26:25:569 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (44ms)
+19:26:25:569 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:26:25:569 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:26:25:569 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:26:25 GMT
+19:26:25:569 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:26:25:569 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:26:25:569 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:26:25:569 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9986,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:26:25:569 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+19:26:34:256 DEBUG 41713 --- [http-nio-8082-exec-9] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:26:34:257 DEBUG 41713 --- [http-nio-8082-exec-9] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:26:34:260 DEBUG 41713 --- [http-nio-8082-exec-9] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:26:34:261 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:26:34:261 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:26:34:261 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:26:34:281 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (19ms)
+19:26:34:281 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:26:34:281 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:26:34:281 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:26:34 GMT
+19:26:34:281 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:26:34:281 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:26:34:281 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:26:34:282 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9986,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:26:34:282 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+19:26:48:048 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+19:26:48:049 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+19:26:48:051 DEBUG 41713 --- [http-nio-8082-exec-2] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+19:30:30:707 DEBUG 41713 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:30:30:708 DEBUG 41713 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:30:30:715 DEBUG 41713 --- [http-nio-8082-exec-4] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:30:30:724 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:30:30:724 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:30:30:724 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:30:30:746 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (22ms)
+19:30:30:747 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:30:30:747 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:30:30:747 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:30:30 GMT
+19:30:30:747 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:30:30:747 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:30:30:747 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:30:30:747 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9985,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:30:30:747 DEBUG 41713 --- [http-nio-8082-exec-4] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+19:30:35:520 DEBUG 41713 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+19:30:35:521 DEBUG 41713 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+19:30:35:523 DEBUG 41713 --- [http-nio-8082-exec-5] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+19:37:53:470 DEBUG 41713 --- [http-nio-8082-exec-8] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:37:53:472 DEBUG 41713 --- [http-nio-8082-exec-8] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:37:53:476 DEBUG 41713 --- [http-nio-8082-exec-8] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:37:53:479 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:37:53:479 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:37:53:479 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:37:53:551 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (71ms)
+19:37:53:551 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:37:53:551 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:37:53:551 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:37:53 GMT
+19:37:53:551 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:37:53:551 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:37:53:551 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:37:53:552 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9984,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:37:53:552 DEBUG 41713 --- [http-nio-8082-exec-8] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+19:37:57:567 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+19:37:57:568 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+19:37:57:569 DEBUG 41713 --- [http-nio-8082-exec-9] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+19:40:49:031 DEBUG 41713 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:40:49:039 DEBUG 41713 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:40:49:052 DEBUG 41713 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:40:49:056 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:40:49:056 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:40:49:056 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:40:49:098 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (41ms)
+19:40:49:098 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:40:49:098 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:40:49:098 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:40:49 GMT
+19:40:49:098 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:40:49:098 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:40:49:098 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:40:49:099 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9983,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:40:49:099 DEBUG 41713 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+19:40:52:260 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+19:40:52:261 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+19:40:52:268 DEBUG 41713 --- [http-nio-8082-exec-3] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+19:45:00:322  WARN 41713 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+19:45:00:322  WARN 41713 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+19:45:00:325  WARN 41713 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+19:45:00:329  WARN 41713 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+19:45:00:507  INFO 41713 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+19:45:00:510  INFO 41713 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+19:45:00:820  INFO 41713 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+19:45:00:820  INFO 41713 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@aa0593c[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+19:45:00:820  INFO 41713 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724755252455_192.168.121.1_54859
+19:45:00:823  INFO 41713 --- [nacos-grpc-client-executor-945] c.a.n.c.remote.client.grpc.GrpcClient    : [1724755252455_192.168.121.1_54859]Ignore complete event,isRunning:false,isAbandon=false
+19:45:00:823  INFO 41713 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@10e99a39[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 946]
+19:45:00:830  INFO 41713 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+19:45:00:845  INFO 41713 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+19:45:00:868  INFO 41713 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x0df4c3bf, L:/192.168.121.1:54833 ! R:/192.168.121.128:8099]
+19:45:00:868  INFO 41713 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x0df4c3bf, L:/192.168.121.1:54833 ! R:/192.168.121.128:8099]
+19:45:00:868  INFO 41713 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x0df4c3bf, L:/192.168.121.1:54833 ! R:/192.168.121.128:8099]
+19:45:00:868  INFO 41713 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x0df4c3bf, L:/192.168.121.1:54833 ! R:/192.168.121.128:8099]
+19:45:00:868  INFO 41713 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x0df4c3bf, L:/192.168.121.1:54833 ! R:/192.168.121.128:8099]) will closed
+19:45:00:868  INFO 41713 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x0df4c3bf, L:/192.168.121.1:54833 ! R:/192.168.121.128:8099]) will closed
+19:45:26:208  INFO 46835 --- [main] com.zjn.cart.CartApplication             : The following 1 profile is active: "local"
+19:45:26:633  INFO 46835 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+19:45:26:634  INFO 46835 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:45:26:643  INFO 46835 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+19:45:26:763  INFO 46835 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d8187fe6-3625-3245-ae05-5809fe670c04
+19:45:26:798  INFO 46835 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:26:799  INFO 46835 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:26:799  INFO 46835 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:26:810  INFO 46835 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:26:812  INFO 46835 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:26:813  INFO 46835 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:26:813  INFO 46835 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$586/0x000000080069e440] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:26:814  INFO 46835 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:26:816  INFO 46835 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:26:817  INFO 46835 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:26:819  INFO 46835 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+19:45:26:842  INFO 46835 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+19:45:26:844  INFO 46835 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+19:45:26:864  INFO 46835 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+19:45:26:885  INFO 46835 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+19:45:27:017  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 10f00b9c-f5f9-4ef6-8dc1-6c7d74e5918e
+19:45:27:017  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [10f00b9c-f5f9-4ef6-8dc1-6c7d74e5918e] RpcClient init label, labels = {module=naming, source=sdk}
+19:45:27:017  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [10f00b9c-f5f9-4ef6-8dc1-6c7d74e5918e] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+19:45:27:018  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [10f00b9c-f5f9-4ef6-8dc1-6c7d74e5918e] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+19:45:27:018  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [10f00b9c-f5f9-4ef6-8dc1-6c7d74e5918e] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+19:45:27:018  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [10f00b9c-f5f9-4ef6-8dc1-6c7d74e5918e] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+19:45:27:139  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [10f00b9c-f5f9-4ef6-8dc1-6c7d74e5918e] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724759127006_192.168.121.1_65438
+19:45:27:139  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [10f00b9c-f5f9-4ef6-8dc1-6c7d74e5918e] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+19:45:27:140  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [10f00b9c-f5f9-4ef6-8dc1-6c7d74e5918e] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x0000000800513440
+19:45:27:140  INFO 46835 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [10f00b9c-f5f9-4ef6-8dc1-6c7d74e5918e] Notify connected event to listeners.
+19:45:27:177  INFO 46835 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.121.128:8099
+19:45:27:193  INFO 46835 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.121.128:8099,msg:< RegisterTMRequest{applicationId='cart-service', transactionServiceGroup='default_tx_group'} >
+19:45:27:278  INFO 46835 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0xe2ffafd9, L:/192.168.121.1:65446 - R:/192.168.121.128:8099]
+19:45:27:283  INFO 46835 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 53 ms, version:1.5.2,role:TMROLE,channel:[id: 0xe2ffafd9, L:/192.168.121.1:65446 - R:/192.168.121.128:8099]
+19:45:27:284  INFO 46835 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[cart-service] txServiceGroup[default_tx_group]
+19:45:27:288  INFO 46835 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+19:45:27:289  INFO 46835 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+19:45:27:293  INFO 46835 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+19:45:27:293  INFO 46835 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[cart-service] txServiceGroup[default_tx_group]
+19:45:27:293  INFO 46835 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+19:45:27:296  INFO 46835 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:27:498  INFO 46835 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:27:500  INFO 46835 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:45:27:745  INFO 46835 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [10f00b9c-f5f9-4ef6-8dc1-6c7d74e5918e] Receive server push request, request = NotifySubscriberRequest, requestId = 399
+19:45:27:747  INFO 46835 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [10f00b9c-f5f9-4ef6-8dc1-6c7d74e5918e] Ack server push request, request = NotifySubscriberRequest, requestId = 399
+19:45:27:788  INFO 46835 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+19:45:27:797  INFO 46835 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:45:27:797  INFO 46835 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+19:45:27:889  INFO 46835 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:45:27:889  INFO 46835 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1673 ms
+19:45:28:131  INFO 46835 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+19:45:28:369  INFO 46835 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+19:45:28:525  INFO 46835 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+19:45:28:574  INFO 46835 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.121.128:8099
+19:45:28:574  INFO 46835 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://192.168.121.128:3306/hm-cart
+19:45:28:574  INFO 46835 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.121.128:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://192.168.121.128:3306/hm-cart', applicationId='cart-service', transactionServiceGroup='default_tx_group'} >
+19:45:28:586  INFO 46835 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x84062b47, L:/192.168.121.1:65462 - R:/192.168.121.128:8099]
+19:45:28:587  INFO 46835 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 11 ms, version:1.5.2,role:RMROLE,channel:[id: 0x84062b47, L:/192.168.121.1:65462 - R:/192.168.121.128:8099]
+19:45:28:926  INFO 46835 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+19:45:29:351  INFO 46835 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+19:45:30:377  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 58cb4c9c-79b2-46cc-80d2-4d54707dfa59
+19:45:30:377  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [58cb4c9c-79b2-46cc-80d2-4d54707dfa59] RpcClient init label, labels = {module=naming, source=sdk}
+19:45:30:377  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [58cb4c9c-79b2-46cc-80d2-4d54707dfa59] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+19:45:30:378  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [58cb4c9c-79b2-46cc-80d2-4d54707dfa59] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+19:45:30:378  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [58cb4c9c-79b2-46cc-80d2-4d54707dfa59] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+19:45:30:379  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [58cb4c9c-79b2-46cc-80d2-4d54707dfa59] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+19:45:30:512  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [58cb4c9c-79b2-46cc-80d2-4d54707dfa59] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724759130363_192.168.121.1_65506
+19:45:30:512  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [58cb4c9c-79b2-46cc-80d2-4d54707dfa59] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+19:45:30:512  INFO 46835 --- [main] com.alibaba.nacos.common.remote.client   : [58cb4c9c-79b2-46cc-80d2-4d54707dfa59] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x0000000800513440
+19:45:30:512  INFO 46835 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [58cb4c9c-79b2-46cc-80d2-4d54707dfa59] Notify connected event to listeners.
+19:45:30:534  INFO 46835 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+19:45:30:539  INFO 46835 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 10.71.59.104:8082 register finished
+19:45:30:542  INFO 46835 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+19:45:30:544  INFO 46835 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+19:45:30:557  INFO 46835 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+19:45:30:635  INFO 46835 --- [main] com.zjn.cart.CartApplication             : Started CartApplication in 5.399 seconds (JVM running for 5.872)
+19:45:30:639  INFO 46835 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service, group=DEFAULT_GROUP
+19:45:30:639  INFO 46835 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service.yaml, group=DEFAULT_GROUP
+19:45:30:639  INFO 46835 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service-local.yaml, group=DEFAULT_GROUP
+19:45:31:046  INFO 46835 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [58cb4c9c-79b2-46cc-80d2-4d54707dfa59] Receive server push request, request = NotifySubscriberRequest, requestId = 402
+19:45:31:049  INFO 46835 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [58cb4c9c-79b2-46cc-80d2-4d54707dfa59] Ack server push request, request = NotifySubscriberRequest, requestId = 402
+19:45:54:682  INFO 46835 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:45:54:683  INFO 46835 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+19:45:54:688  INFO 46835 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+19:45:54:818 DEBUG 46835 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:45:54:829 DEBUG 46835 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:45:54:841 DEBUG 46835 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:45:54:863 DEBUG 46835 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:45:54:863 DEBUG 46835 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:45:54:863 DEBUG 46835 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:45:55:157 DEBUG 46835 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (293ms)
+19:45:55:157 DEBUG 46835 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:45:55:157 DEBUG 46835 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:45:55:158 DEBUG 46835 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:45:55 GMT
+19:45:55:158 DEBUG 46835 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:45:55:158 DEBUG 46835 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:45:55:158 DEBUG 46835 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:45:55:158 DEBUG 46835 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9982,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:45:55:158 DEBUG 46835 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+19:45:55:434  INFO 46835 --- [nacos-grpc-client-executor-17] com.alibaba.nacos.common.remote.client   : [58cb4c9c-79b2-46cc-80d2-4d54707dfa59] Receive server push request, request = NotifySubscriberRequest, requestId = 415
+19:45:55:435  INFO 46835 --- [nacos-grpc-client-executor-17] com.alibaba.nacos.common.remote.client   : [58cb4c9c-79b2-46cc-80d2-4d54707dfa59] Ack server push request, request = NotifySubscriberRequest, requestId = 415
+19:48:38:154 DEBUG 46835 --- [http-nio-8082-exec-3] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:48:38:158 DEBUG 46835 --- [http-nio-8082-exec-3] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:48:38:165 DEBUG 46835 --- [http-nio-8082-exec-3] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:48:38:170 DEBUG 46835 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:48:38:170 DEBUG 46835 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:48:38:170 DEBUG 46835 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:48:38:399 DEBUG 46835 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (228ms)
+19:48:38:400 DEBUG 46835 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:48:38:400 DEBUG 46835 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:48:38:400 DEBUG 46835 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:48:38 GMT
+19:48:38:400 DEBUG 46835 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:48:38:400 DEBUG 46835 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:48:38:400 DEBUG 46835 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:48:38:401 DEBUG 46835 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9982,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:48:38:401 DEBUG 46835 --- [http-nio-8082-exec-3] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
+19:48:43:361 DEBUG 46835 --- [http-nio-8082-exec-4] com.zjn.cart.mapper.CartMapper.delete    : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+19:48:43:410 DEBUG 46835 --- [http-nio-8082-exec-4] com.zjn.cart.mapper.CartMapper.delete    : ==> Parameters: null, 8533120(Long)
+19:48:43:501 DEBUG 46835 --- [http-nio-8082-exec-4] com.zjn.cart.mapper.CartMapper.delete    : <==    Updates: 0
+19:48:51:197 DEBUG 46835 --- [http-nio-8082-exec-5] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:48:51:198 DEBUG 46835 --- [http-nio-8082-exec-5] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+19:48:51:202 DEBUG 46835 --- [http-nio-8082-exec-5] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 2
+19:48:51:204 DEBUG 46835 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1533902 HTTP/1.1
+19:48:51:204 DEBUG 46835 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+19:48:51:204 DEBUG 46835 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+19:48:51:222 DEBUG 46835 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (17ms)
+19:48:51:222 DEBUG 46835 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+19:48:51:222 DEBUG 46835 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+19:48:51:222 DEBUG 46835 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Tue, 27 Aug 2024 11:48:51 GMT
+19:48:51:222 DEBUG 46835 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+19:48:51:222 DEBUG 46835 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+19:48:51:222 DEBUG 46835 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+19:48:51:223 DEBUG 46835 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":0,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9981,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+19:48:51:223 DEBUG 46835 --- [http-nio-8082-exec-5] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (747-byte body)
