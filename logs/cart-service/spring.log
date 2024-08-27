@@ -10283,3 +10283,515 @@ com.hmall.common.exception.BizIllegalException: 用户购物车课程不能超�
 19:33:23:063 DEBUG 85478 --- [http-nio-8082-exec-7] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
 19:33:23:064 DEBUG 85478 --- [http-nio-8082-exec-7] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"2120808","name":"姬龙雪 guy laroche女包 GL经典手提包女牛皮大容量单肩包女欧美时尚包包女包GS1210001-06杏色","price":71800,"stock":1,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30694/267/398774087/90954/6fc143cf/5bf25358N14dadbf7.jpg!q70.jpg.webp","category":"真皮包","brand":"姬龙雪","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9996,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
 19:33:23:064 DEBUG 85478 --- [http-nio-8082-exec-7] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (1152-byte body)
+20:03:17:444  WARN 85478 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:03:17:444  WARN 85478 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:03:17:445  WARN 85478 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:03:17:448  WARN 85478 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:03:17:516  INFO 85478 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+20:03:17:519  INFO 85478 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+20:03:17:824  INFO 85478 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+20:03:17:824  INFO 85478 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@37c0b398[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+20:03:17:824  INFO 85478 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724522212657_192.168.121.1_49580
+20:03:17:829  INFO 85478 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@7f0288aa[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 1392]
+20:03:17:834  INFO 85478 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+20:03:17:890  INFO 85478 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+20:03:21:577  INFO 92063 --- [main] com.zjn.cart.CartApplication             : The following 1 profile is active: "local"
+20:03:22:129  INFO 92063 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:03:22:130  INFO 92063 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:03:22:143  INFO 92063 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+20:03:22:286  INFO 92063 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff9b7a79-bd86-36bb-85fe-2e43aaf632a5
+20:03:22:526  INFO 92063 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+20:03:22:531  INFO 92063 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+20:03:22:531  INFO 92063 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+20:03:22:594  INFO 92063 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+20:03:22:594  INFO 92063 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1005 ms
+20:03:22:775  INFO 92063 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+20:03:22:899  WARN 92063 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartController' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/controller/CartController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartServiceImpl' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/service/impl/CartServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+20:03:22:901  INFO 92063 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+20:03:22:912  INFO 92063 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20:03:22:925 ERROR 92063 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartController' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/controller/CartController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartServiceImpl' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/service/impl/CartServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at com.zjn.cart.CartApplication.main(CartApplication.java:14) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartServiceImpl' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/service/impl/CartServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 33 common frames omitted
+Caused by: java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at com.alibaba.cloud.sentinel.feign.SentinelFeign$Builder$1.getFromContext(SentinelFeign.java:125) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.sentinel.feign.SentinelFeign$Builder$1.create(SentinelFeign.java:110) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
+	at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:64) ~[feign-core-11.8.jar:na]
+	at feign.Feign$Builder.target(Feign.java:268) ~[feign-core-11.8.jar:na]
+	at org.springframework.cloud.openfeign.DefaultTargeter.target(DefaultTargeter.java:30) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:379) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:427) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:402) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.lambda$registerFeignClient$0(FeignClientsRegistrar.java:235) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.obtainFromSupplier(AbstractAutowireCapableBeanFactory.java:1249) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 42 common frames omitted
+
+20:03:22:925  WARN 92063 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:03:22:926  WARN 92063 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:03:22:926  WARN 92063 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:03:38:286  INFO 92097 --- [main] com.zjn.cart.CartApplication             : The following 1 profile is active: "local"
+20:03:38:646  INFO 92097 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:03:38:647  INFO 92097 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:03:38:656  INFO 92097 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+20:03:38:771  INFO 92097 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff9b7a79-bd86-36bb-85fe-2e43aaf632a5
+20:03:38:985  INFO 92097 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+20:03:38:989  INFO 92097 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+20:03:38:989  INFO 92097 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+20:03:39:044  INFO 92097 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+20:03:39:044  INFO 92097 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 750 ms
+20:03:39:189  INFO 92097 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+20:03:39:318  WARN 92097 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartController' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/controller/CartController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartServiceImpl' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/service/impl/CartServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+20:03:39:320  INFO 92097 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+20:03:39:329  INFO 92097 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20:03:39:339 ERROR 92097 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartController' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/controller/CartController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartServiceImpl' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/service/impl/CartServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at com.zjn.cart.CartApplication.main(CartApplication.java:14) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartServiceImpl' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/service/impl/CartServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 33 common frames omitted
+Caused by: java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at com.alibaba.cloud.sentinel.feign.SentinelFeign$Builder$1.getFromContext(SentinelFeign.java:125) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.sentinel.feign.SentinelFeign$Builder$1.create(SentinelFeign.java:110) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
+	at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:64) ~[feign-core-11.8.jar:na]
+	at feign.Feign$Builder.target(Feign.java:268) ~[feign-core-11.8.jar:na]
+	at org.springframework.cloud.openfeign.DefaultTargeter.target(DefaultTargeter.java:30) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:379) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:427) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:402) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.lambda$registerFeignClient$0(FeignClientsRegistrar.java:235) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.obtainFromSupplier(AbstractAutowireCapableBeanFactory.java:1249) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 42 common frames omitted
+
+20:03:39:339  WARN 92097 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:03:39:339  WARN 92097 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:03:39:340  WARN 92097 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:03:39:340  WARN 92097 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:04:43:523  INFO 92164 --- [main] com.zjn.cart.CartApplication             : The following 1 profile is active: "local"
+20:04:43:871  INFO 92164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:04:43:872  INFO 92164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:04:43:881  INFO 92164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+20:04:43:986  INFO 92164 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d07fb13b-fedc-3284-9393-ceab7ad5b4ea
+20:04:44:196  INFO 92164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+20:04:44:201  INFO 92164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+20:04:44:201  INFO 92164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+20:04:44:253  INFO 92164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+20:04:44:253  INFO 92164 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 722 ms
+20:04:44:388  INFO 92164 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+20:04:44:745  INFO 92164 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+20:04:44:922  INFO 92164 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+20:04:45:180  INFO 92164 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 7fa402b4-6420-4a4c-bce1-95bd0f7256fa
+20:04:45:180  INFO 92164 --- [main] com.alibaba.nacos.common.remote.client   : [7fa402b4-6420-4a4c-bce1-95bd0f7256fa] RpcClient init label, labels = {module=naming, source=sdk}
+20:04:45:181  INFO 92164 --- [main] com.alibaba.nacos.common.remote.client   : [7fa402b4-6420-4a4c-bce1-95bd0f7256fa] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+20:04:45:181  INFO 92164 --- [main] com.alibaba.nacos.common.remote.client   : [7fa402b4-6420-4a4c-bce1-95bd0f7256fa] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+20:04:45:181  INFO 92164 --- [main] com.alibaba.nacos.common.remote.client   : [7fa402b4-6420-4a4c-bce1-95bd0f7256fa] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+20:04:45:181  INFO 92164 --- [main] com.alibaba.nacos.common.remote.client   : [7fa402b4-6420-4a4c-bce1-95bd0f7256fa] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+20:04:45:297  INFO 92164 --- [main] com.alibaba.nacos.common.remote.client   : [7fa402b4-6420-4a4c-bce1-95bd0f7256fa] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724527606012_192.168.121.1_54238
+20:04:45:298  INFO 92164 --- [main] com.alibaba.nacos.common.remote.client   : [7fa402b4-6420-4a4c-bce1-95bd0f7256fa] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+20:04:45:298  INFO 92164 --- [main] com.alibaba.nacos.common.remote.client   : [7fa402b4-6420-4a4c-bce1-95bd0f7256fa] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x000000080051f840
+20:04:45:298  INFO 92164 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [7fa402b4-6420-4a4c-bce1-95bd0f7256fa] Notify connected event to listeners.
+20:04:45:327  INFO 92164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+20:04:45:334  INFO 92164 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 10.71.59.104:8082 register finished
+20:04:45:337  INFO 92164 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+20:04:45:339  INFO 92164 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+20:04:45:348  INFO 92164 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+20:04:45:392  INFO 92164 --- [main] com.zjn.cart.CartApplication             : Started CartApplication in 2.795 seconds (JVM running for 3.29)
+20:04:45:395  INFO 92164 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service, group=DEFAULT_GROUP
+20:04:45:395  INFO 92164 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service.yaml, group=DEFAULT_GROUP
+20:04:45:396  INFO 92164 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service-local.yaml, group=DEFAULT_GROUP
+20:04:45:873  INFO 92164 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [7fa402b4-6420-4a4c-bce1-95bd0f7256fa] Receive server push request, request = NotifySubscriberRequest, requestId = 234
+20:04:45:875  INFO 92164 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [7fa402b4-6420-4a4c-bce1-95bd0f7256fa] Ack server push request, request = NotifySubscriberRequest, requestId = 234
+20:04:54:048  WARN 92164 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:04:54:048  WARN 92164 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:04:54:049  WARN 92164 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:04:54:049  WARN 92164 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:04:54:077  INFO 92164 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+20:04:54:080  INFO 92164 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+20:04:54:625  INFO 92164 --- [nacos-grpc-client-executor-16] com.alibaba.nacos.common.remote.client   : [7fa402b4-6420-4a4c-bce1-95bd0f7256fa] Receive server push request, request = NotifySubscriberRequest, requestId = 236
+20:04:54:627  INFO 92164 --- [nacos-grpc-client-executor-16] com.alibaba.nacos.common.remote.client   : [7fa402b4-6420-4a4c-bce1-95bd0f7256fa] Ack server push request, request = NotifySubscriberRequest, requestId = 236
+20:04:54:699  INFO 92164 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+20:04:54:699  INFO 92164 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@55870bc5[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+20:04:54:699  INFO 92164 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724527606012_192.168.121.1_54238
+20:04:54:703  INFO 92164 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@17ea3945[Running, pool size = 17, active threads = 0, queued tasks = 0, completed tasks = 17]
+20:04:56:885  INFO 92191 --- [main] com.zjn.cart.CartApplication             : The following 1 profile is active: "local"
+20:04:57:236  INFO 92191 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:04:57:237  INFO 92191 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:04:57:246  INFO 92191 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+20:04:57:367  INFO 92191 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff9b7a79-bd86-36bb-85fe-2e43aaf632a5
+20:04:57:581  INFO 92191 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+20:04:57:585  INFO 92191 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+20:04:57:585  INFO 92191 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+20:04:57:636  INFO 92191 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+20:04:57:636  INFO 92191 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 737 ms
+20:04:57:772  INFO 92191 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+20:04:57:914  WARN 92191 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartController' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/controller/CartController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartServiceImpl' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/service/impl/CartServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+20:04:57:916  INFO 92191 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+20:04:57:924  INFO 92191 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20:04:57:934 ERROR 92191 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartController' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/controller/CartController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartServiceImpl' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/service/impl/CartServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at com.zjn.cart.CartApplication.main(CartApplication.java:14) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartServiceImpl' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/service/impl/CartServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 33 common frames omitted
+Caused by: java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at com.alibaba.cloud.sentinel.feign.SentinelFeign$Builder$1.getFromContext(SentinelFeign.java:125) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.sentinel.feign.SentinelFeign$Builder$1.create(SentinelFeign.java:110) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
+	at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:64) ~[feign-core-11.8.jar:na]
+	at feign.Feign$Builder.target(Feign.java:268) ~[feign-core-11.8.jar:na]
+	at org.springframework.cloud.openfeign.DefaultTargeter.target(DefaultTargeter.java:30) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:379) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:427) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:402) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.lambda$registerFeignClient$0(FeignClientsRegistrar.java:235) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.obtainFromSupplier(AbstractAutowireCapableBeanFactory.java:1249) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 42 common frames omitted
+
+20:04:57:934  WARN 92191 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:04:57:935  WARN 92191 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:04:57:935  WARN 92191 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:04:57:935  WARN 92191 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:05:20:616  INFO 92214 --- [main] com.zjn.cart.CartApplication             : The following 1 profile is active: "local"
+20:05:20:952  INFO 92214 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:05:20:953  INFO 92214 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:05:20:963  INFO 92214 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+20:05:21:091  INFO 92214 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d07fb13b-fedc-3284-9393-ceab7ad5b4ea
+20:05:21:434  INFO 92214 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+20:05:21:439  INFO 92214 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+20:05:21:440  INFO 92214 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+20:05:21:525  INFO 92214 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+20:05:21:525  INFO 92214 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 901 ms
+20:05:21:681  INFO 92214 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+20:05:22:048  INFO 92214 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+20:05:22:229  INFO 92214 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+20:05:22:497  INFO 92214 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of df33f0a5-ac71-45bb-9fed-b462657a241f
+20:05:22:498  INFO 92214 --- [main] com.alibaba.nacos.common.remote.client   : [df33f0a5-ac71-45bb-9fed-b462657a241f] RpcClient init label, labels = {module=naming, source=sdk}
+20:05:22:499  INFO 92214 --- [main] com.alibaba.nacos.common.remote.client   : [df33f0a5-ac71-45bb-9fed-b462657a241f] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+20:05:22:499  INFO 92214 --- [main] com.alibaba.nacos.common.remote.client   : [df33f0a5-ac71-45bb-9fed-b462657a241f] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+20:05:22:499  INFO 92214 --- [main] com.alibaba.nacos.common.remote.client   : [df33f0a5-ac71-45bb-9fed-b462657a241f] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+20:05:22:508  INFO 92214 --- [main] com.alibaba.nacos.common.remote.client   : [df33f0a5-ac71-45bb-9fed-b462657a241f] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+20:05:22:638  INFO 92214 --- [main] com.alibaba.nacos.common.remote.client   : [df33f0a5-ac71-45bb-9fed-b462657a241f] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724527643356_192.168.121.1_54510
+20:05:22:638  INFO 92214 --- [main] com.alibaba.nacos.common.remote.client   : [df33f0a5-ac71-45bb-9fed-b462657a241f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+20:05:22:638  INFO 92214 --- [main] com.alibaba.nacos.common.remote.client   : [df33f0a5-ac71-45bb-9fed-b462657a241f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x0000000800540c40
+20:05:22:638  INFO 92214 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [df33f0a5-ac71-45bb-9fed-b462657a241f] Notify connected event to listeners.
+20:05:22:669  INFO 92214 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+20:05:22:676  INFO 92214 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 10.71.59.104:8082 register finished
+20:05:22:678  INFO 92214 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+20:05:22:680  INFO 92214 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+20:05:22:690  INFO 92214 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+20:05:22:738  INFO 92214 --- [main] com.zjn.cart.CartApplication             : Started CartApplication in 3.038 seconds (JVM running for 3.362)
+20:05:22:741  INFO 92214 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service, group=DEFAULT_GROUP
+20:05:22:741  INFO 92214 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service.yaml, group=DEFAULT_GROUP
+20:05:22:742  INFO 92214 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service-local.yaml, group=DEFAULT_GROUP
+20:05:23:205  INFO 92214 --- [nacos-grpc-client-executor-11] com.alibaba.nacos.common.remote.client   : [df33f0a5-ac71-45bb-9fed-b462657a241f] Receive server push request, request = NotifySubscriberRequest, requestId = 237
+20:05:23:207  INFO 92214 --- [nacos-grpc-client-executor-11] com.alibaba.nacos.common.remote.client   : [df33f0a5-ac71-45bb-9fed-b462657a241f] Ack server push request, request = NotifySubscriberRequest, requestId = 237
+20:05:43:891  INFO 92214 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:05:43:892  INFO 92214 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+20:05:43:895  INFO 92214 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+20:05:44:022  INFO 92214 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+20:05:44:195  INFO 92214 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+20:05:44:199 DEBUG 92214 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+20:05:44:211 DEBUG 92214 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : ==> Parameters: 1(Long)
+20:05:44:224 DEBUG 92214 --- [http-nio-8082-exec-1] c.zjn.cart.mapper.CartMapper.selectList  : <==      Total: 3
+20:05:44:248 DEBUG 92214 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=2120808&ids=1533902 HTTP/1.1
+20:05:44:248 DEBUG 92214 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] user-info: 1
+20:05:44:248 DEBUG 92214 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+20:05:44:353 DEBUG 92214 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (104ms)
+20:05:44:353 DEBUG 92214 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] connection: keep-alive
+20:05:44:353 DEBUG 92214 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] content-type: application/json
+20:05:44:353 DEBUG 92214 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] date: Mon, 26 Aug 2024 12:05:44 GMT
+20:05:44:353 DEBUG 92214 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] keep-alive: timeout=60
+20:05:44:353 DEBUG 92214 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] transfer-encoding: chunked
+20:05:44:353 DEBUG 92214 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] 
+20:05:44:353 DEBUG 92214 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"2120808","name":"姬龙雪 guy laroche女包 GL经典手提包女牛皮大容量单肩包女欧美时尚包包女包GS1210001-06杏色","price":71800,"stock":1,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t30694/267/398774087/90954/6fc143cf/5bf25358N14dadbf7.jpg!q70.jpg.webp","category":"真皮包","brand":"姬龙雪","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":9996,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+20:05:44:354 DEBUG 92214 --- [http-nio-8082-exec-1] com.zjn.api.client.ItemClient            : [ItemClient#queryItemByIds] <--- END HTTP (1152-byte body)
+20:05:44:866  INFO 92214 --- [nacos-grpc-client-executor-21] com.alibaba.nacos.common.remote.client   : [df33f0a5-ac71-45bb-9fed-b462657a241f] Receive server push request, request = NotifySubscriberRequest, requestId = 241
+20:05:44:867  INFO 92214 --- [nacos-grpc-client-executor-21] com.alibaba.nacos.common.remote.client   : [df33f0a5-ac71-45bb-9fed-b462657a241f] Ack server push request, request = NotifySubscriberRequest, requestId = 241
+20:11:26:624  WARN 92214 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:11:26:624  WARN 92214 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:11:26:626  WARN 92214 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:11:26:626  WARN 92214 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:11:26:671  INFO 92214 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+20:11:26:676  INFO 92214 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+20:11:26:981  INFO 92214 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+20:11:26:981  INFO 92214 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@32e750ed[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+20:11:26:981  INFO 92214 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724527643356_192.168.121.1_54510
+20:11:26:983  INFO 92214 --- [nacos-grpc-client-executor-139] c.a.n.c.remote.client.grpc.GrpcClient    : [1724527643356_192.168.121.1_54510]Ignore complete event,isRunning:false,isAbandon=false
+20:11:26:985  INFO 92214 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@22729d26[Running, pool size = 10, active threads = 0, queued tasks = 0, completed tasks = 140]
+20:11:26:990  INFO 92214 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+20:11:27:014  INFO 92214 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+20:11:30:879  INFO 92658 --- [main] com.zjn.cart.CartApplication             : The following 1 profile is active: "local"
+20:11:31:220  INFO 92658 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:11:31:221  INFO 92658 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:11:31:230  INFO 92658 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+20:11:31:332  INFO 92658 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff9b7a79-bd86-36bb-85fe-2e43aaf632a5
+20:11:31:537  INFO 92658 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+20:11:31:541  INFO 92658 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+20:11:31:541  INFO 92658 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+20:11:31:593  INFO 92658 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+20:11:31:593  INFO 92658 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 707 ms
+20:11:31:725  INFO 92658 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+20:11:31:863  WARN 92658 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartController' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/controller/CartController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartServiceImpl' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/service/impl/CartServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+20:11:31:864  INFO 92658 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+20:11:31:873  INFO 92658 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20:11:31:882 ERROR 92658 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartController' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/controller/CartController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartServiceImpl' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/service/impl/CartServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at com.zjn.cart.CartApplication.main(CartApplication.java:14) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartServiceImpl' defined in file [/Users/zjn_11/Desktop/HMALL/hmall/cart-service/target/classes/com/zjn/cart/service/impl/CartServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zjn.api.client.ItemClient': Unexpected exception during bean creation; nested exception is java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 33 common frames omitted
+Caused by: java.lang.IllegalStateException: No fallbackFactory instance of type class com.zjn.api.fallback.ItemClientFallbackFactory found for feign client item-service
+	at com.alibaba.cloud.sentinel.feign.SentinelFeign$Builder$1.getFromContext(SentinelFeign.java:125) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.sentinel.feign.SentinelFeign$Builder$1.create(SentinelFeign.java:110) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
+	at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:64) ~[feign-core-11.8.jar:na]
+	at feign.Feign$Builder.target(Feign.java:268) ~[feign-core-11.8.jar:na]
+	at org.springframework.cloud.openfeign.DefaultTargeter.target(DefaultTargeter.java:30) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:379) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:427) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:402) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.lambda$registerFeignClient$0(FeignClientsRegistrar.java:235) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.obtainFromSupplier(AbstractAutowireCapableBeanFactory.java:1249) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 42 common frames omitted
+
+20:11:31:883  WARN 92658 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:11:31:883  WARN 92658 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:11:31:884  WARN 92658 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:11:31:884  WARN 92658 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+22:41:26:348  INFO 99585 --- [main] com.zjn.cart.CartApplication             : The following 1 profile is active: "local"
+22:41:26:727  INFO 99585 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+22:41:26:728  INFO 99585 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:41:26:737  INFO 99585 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+22:41:26:849  INFO 99585 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d07fb13b-fedc-3284-9393-ceab7ad5b4ea
+22:41:27:076  INFO 99585 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+22:41:27:080  INFO 99585 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:41:27:081  INFO 99585 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+22:41:27:140  INFO 99585 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:41:27:141  INFO 99585 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 785 ms
+22:41:27:290  INFO 99585 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+22:41:27:683  INFO 99585 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:41:27:864  INFO 99585 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+22:41:28:148  INFO 99585 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 20080d7a-fea6-4f27-aed3-a6b40bfb2f47
+22:41:28:148  INFO 99585 --- [main] com.alibaba.nacos.common.remote.client   : [20080d7a-fea6-4f27-aed3-a6b40bfb2f47] RpcClient init label, labels = {module=naming, source=sdk}
+22:41:28:149  INFO 99585 --- [main] com.alibaba.nacos.common.remote.client   : [20080d7a-fea6-4f27-aed3-a6b40bfb2f47] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+22:41:28:149  INFO 99585 --- [main] com.alibaba.nacos.common.remote.client   : [20080d7a-fea6-4f27-aed3-a6b40bfb2f47] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+22:41:28:149  INFO 99585 --- [main] com.alibaba.nacos.common.remote.client   : [20080d7a-fea6-4f27-aed3-a6b40bfb2f47] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+22:41:28:149  INFO 99585 --- [main] com.alibaba.nacos.common.remote.client   : [20080d7a-fea6-4f27-aed3-a6b40bfb2f47] Try to connect to server on start up, server: {serverIp = '192.168.121.128', server main port = 8848}
+22:41:28:270  INFO 99585 --- [main] com.alibaba.nacos.common.remote.client   : [20080d7a-fea6-4f27-aed3-a6b40bfb2f47] Success to connect to server [192.168.121.128:8848] on start up, connectionId = 1724533840371_192.168.121.1_49565
+22:41:28:270  INFO 99585 --- [main] com.alibaba.nacos.common.remote.client   : [20080d7a-fea6-4f27-aed3-a6b40bfb2f47] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+22:41:28:270  INFO 99585 --- [main] com.alibaba.nacos.common.remote.client   : [20080d7a-fea6-4f27-aed3-a6b40bfb2f47] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$466/0x000000080051d840
+22:41:28:270  INFO 99585 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [20080d7a-fea6-4f27-aed3-a6b40bfb2f47] Notify connected event to listeners.
+22:41:28:302  INFO 99585 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+22:41:28:311  INFO 99585 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 192.168.0.103:8082 register finished
+22:41:28:314  INFO 99585 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+22:41:28:315  INFO 99585 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+22:41:28:325  INFO 99585 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+22:41:28:371  INFO 99585 --- [main] com.zjn.cart.CartApplication             : Started CartApplication in 3.005 seconds (JVM running for 3.63)
+22:41:28:374  INFO 99585 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service, group=DEFAULT_GROUP
+22:41:28:374  INFO 99585 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service.yaml, group=DEFAULT_GROUP
+22:41:28:374  INFO 99585 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service-local.yaml, group=DEFAULT_GROUP
+22:41:28:866  INFO 99585 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [20080d7a-fea6-4f27-aed3-a6b40bfb2f47] Receive server push request, request = NotifySubscriberRequest, requestId = 244
+22:41:28:869  INFO 99585 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [20080d7a-fea6-4f27-aed3-a6b40bfb2f47] Ack server push request, request = NotifySubscriberRequest, requestId = 244

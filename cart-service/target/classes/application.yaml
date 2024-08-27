@@ -8,6 +8,8 @@ hm:
     package: com.zjn.cart.controller
     description: "CSIMS购物车管理接口文档"
 feign:
+#  sentinel:
+#    enabled: true # 开启feign接口的流量控制
   okhttp:
     enabled: true
 spring:
