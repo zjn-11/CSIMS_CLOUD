@@ -7,8 +7,9 @@ spring:
     nacos:
       server-addr: 192.168.121.128:8848 # 服务器地址+nacos端口
       config:
-        file-extension: yaml
+        file-extension: yaml # 微服务名称 + [运行环境] . [file-extension] 就是Nacos中配置热更新所对应的文件名
         shared-configs:
           - data-id: shared-jdbc.yaml
           - data-id: shared-logging.yaml
           - data-id: shared-swagger.yaml
+          - data-id: shared-seata.yaml

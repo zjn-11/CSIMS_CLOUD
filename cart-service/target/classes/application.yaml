@@ -18,3 +18,9 @@ spring:
       transport:
         dashboard: localhost:8090 # sentinel控制台地址
       http-method-specify: true # 将请求方式作为资源名称，防止RestFul风格下的簇点重复
+seata:
+  data-source-proxy-mode: AT
+  tx-service-group: default_tx_group # 事务组名称
+  service:
+    vgroup-mapping: # 事务组与tc集群的映射关系
+      default_tx_group: default

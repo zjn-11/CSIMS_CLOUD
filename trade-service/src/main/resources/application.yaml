@@ -10,6 +10,12 @@ hm:
 feign:
   okhttp:
     enabled: true
+seata:
+  data-source-proxy-mode: AT
+  tx-service-group: default_tx_group # 事务组名称
+  service:
+    vgroup-mapping: # 事务组与tc集群的映射关系
+      default_tx_group: default
 
 #server:
 #  port: 8085
@@ -58,4 +64,5 @@ feign:
 #feign:
 #  okhttp:
 #    enabled: true
+
 # keytool -genkeypair -alias hmall -keyalg RSA -keypass hmall123 -keystore hmall.jks -storepass hmall123
