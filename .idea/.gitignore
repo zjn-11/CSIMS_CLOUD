@@ -7,7 +7,7 @@
 /dataSources/
 /dataSources.local.xml
 
-/target/
+target/
 
 # 在.gitignore中添加
 *.log
