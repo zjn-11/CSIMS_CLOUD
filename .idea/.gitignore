@@ -6,3 +6,31 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+/target/
+
+# 在.gitignore中添加
+*.log
+*.[oa]
+*~
+*.tmp
+*.bak
+*.swp
+*.zip
+*.gz
+*.psd
+*.xproj
+*.pidb
+*.pdb
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.boj
+*.intelliSense
+*.nuspec
+*.csproj.user
+*.userprefs
+*.sln.docstates
+
